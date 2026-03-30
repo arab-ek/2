@@ -16,37 +16,28 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class PassiveEffectTask extends BukkitRunnable {
   private final Main plugin;
-  
+
   private final NamespacedKey itemKey;
-  
   private int kuLimitRegen;
-  
   private int kuLimitResist;
-  
   private int koronaStrength;
-  
   private int koronaSpeed;
-  
   private int koronaFire;
-  
   private int koronaResist;
-  
   private int koronaLuck;
-  
   private int ku26Regen;
-  
   private int ku26Resist;
-  
+
   private double ku26ExtraHealth;
-  
+
   private PotionEffect peLizak;
-  
+
   public PassiveEffectTask(Main plugin) {
     this.plugin = plugin;
     this.itemKey = new NamespacedKey((Plugin)plugin, "event_item_id");
     cacheValues();
   }
-  
+
   private void cacheValues() {
     this.kuLimitRegen = this.plugin.getConfig().getInt("meta.roza_kupidyna.regen_level", 1);
     this.kuLimitResist = this.plugin.getConfig().getInt("meta.roza_kupidyna.resistance_level", 1);
@@ -60,10 +51,10 @@ public class PassiveEffectTask extends BukkitRunnable {
     this.ku26ExtraHealth = this.plugin.getConfig().getDouble("meta.roza_kupidyna_2026.extra_health", 10.0D);
     this.peLizak = new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 100, 0);
   }
-  
+
   public void run() {
     if (Bukkit.getCurrentTick() % 100 == 0)
-      cacheValues(); 
+      cacheValues();
     EquipmentCacheManager cache = this.plugin.getEquipmentCacheManager();
     for (Player player : Bukkit.getOnlinePlayers()) {
       EquipmentCacheManager.PlayerEquipment equipment = cache.getEquipment(player.getUniqueId());
@@ -73,16 +64,17 @@ public class PassiveEffectTask extends BukkitRunnable {
           String id = ((EventItem)entry.getValue()).getId();
           apply(player, id, (((Integer)entry.getKey()).intValue() == 39));
           if ("roza_kupidyna_2026".equals(id))
-            hasRose2026 = true; 
-        }  
+            hasRose2026 = true;
+        }
       if (!hasRose2026) {
         AttributeInstance attr = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
-        if (attr != null && attr.getBaseValue() != 20.0D)
-          attr.setBaseValue(20.0D); 
-      } 
-    } 
+        // Zmiana z 20.0D (10 serc) na 60.0D (30 serc)
+        if (attr != null && attr.getBaseValue() != 60.0D)
+          attr.setBaseValue(60.0D);
+      }
+    }
   }
-  
+
   private void apply(Player player, String id, boolean isHelmet) {
     double targetHealth;
     AttributeInstance healthAttr;
@@ -101,22 +93,17 @@ public class PassiveEffectTask extends BukkitRunnable {
           player.addPotionEffect(new PotionEffect(PotionEffectType.FIRE_RESISTANCE, 100, this.koronaFire - 1));
           player.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 100, this.koronaResist - 1));
           player.addPotionEffect(new PotionEffect(PotionEffectType.LUCK, 100, this.koronaLuck - 1));
-        } 
+        }
         break;
       case "roza_kupidyna_2026":
         player.addPotionEffect(new PotionEffect(PotionEffectType.REGENERATION, 100, this.ku26Regen - 1));
         player.addPotionEffect(new PotionEffect(PotionEffectType.DAMAGE_RESISTANCE, 100, this.ku26Resist - 1));
-        targetHealth = 20.0D + this.ku26ExtraHealth;
+        // Zmiana z 20.0D (10 serc) na 60.0D (30 serc) jako bazowa wartość przed dodaniem bonusu
+        targetHealth = 60.0D + this.ku26ExtraHealth;
         healthAttr = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
         if (healthAttr != null && healthAttr.getBaseValue() != targetHealth)
-          healthAttr.setBaseValue(targetHealth); 
+          healthAttr.setBaseValue(targetHealth);
         break;
-    } 
+    }
   }
 }
-
-
-/* Location:              C:\Users\bosiwo\Desktop\MINECRAFT\coreeveszafaitp.jar!\loluszek\pl\paczkiAnaeventowki\EVENTOWKICORE\tasks\PassiveEffectTask.class
- * Java compiler version: 17 (61.0)
- * JD-Core Version:       1.1.3
- */
