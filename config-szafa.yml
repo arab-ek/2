@@ -1,0 +1,1163 @@
+# INSTRUKCJA TEKSTUR GŁÓWEK (NP. DO TYCH KOSTIUMÓW ALBO DO PETSOW):
+# Użyj tekstury głowki z strony minesk.in
+# 1. Wybierz główkę na stronie.
+# 2. Skopiuj wartość z sekcji 'Value'.
+# 3. Wklej do configu w pole 'value'.
+#
+# DOSTĘPNE EFEKTY DODATKOWE (W PETACH I PAPUGACH I KOSTIUMACH):
+# Zmienne nazw efektow dodawaj w sekcji 'type' w configu ->
+#
+# --- EFEKTY STANDARDOWE ---
+# - SPEED                   - Daje graczowi szybkość poruszania się.
+# - INCREASE_DAMAGE         - Zwiększa zadawane obrażenia.
+# - DAMAGE_RESISTANCE       - Zmniejsza otrzymywane obrażenia.
+# - REGENERATION            - Powoli odnawia życie gracza.
+# - FAST_DIGGING            - Przyspiesza kopanie bloków.
+# - JUMP                    - Pozwala na wyższe skakanie.
+# - FIRE_RESISTANCE         - Daje odporność na ogień i lawę.
+# - WATER_BREATHING         - Pozwala oddychać pod wodą.
+# - NIGHT_VISION            - Pozwala widzieć w ciemności.
+# - INVISIBILITY            - Robi że gracz jest niewidzialny.
+# - LUCK                    - Zwiększa szczęście (np. przy łowieniu ryb).
+# - DOLPHINS_GRACE          - Przyspiesza pływanie w wodzie.
+# - CONDUIT_POWER           - Daje efekty podwodne (widzenie i tlen).
+# - ABSORPTION              - Daje dodatkowe złote serca jak po refie
+# - SLOW                    - Spowalnia gracza.
+#
+# --- EFEKTY SPECJALNE ---
+# - NO_HUNGER               - Gracz nigdy nie staje się głodny.
+# - FALL_DAMAGE_RESISTANCE  - Zmniejsza obrażenia od upadku o 50%.
+# - HEALTH_BOOST            - Dodaje stałe dodatkowe serca.
+#
+# --- PRZYKŁAD UŻYCIA W PETACH ---
+# gui_pets:
+#   items:
+#     nazwa_peta:
+#       effects:
+#         - type: SPEED
+#           amplifier: 1  # Poziom efektu (0 = I, 1 = II itp)
+
+gui:
+  title: '               &8ꜱᴢᴀꜰᴋᴀ'
+  rows: 6
+  items:
+    costume_slot:
+      slot: 11
+      material: CHAINMAIL_CHESTPLATE
+      name: '&cBrak kostiumu'
+      lore: []
+
+    pet_slot:
+      slot: 15
+      material: SKELETON_SKULL
+      name: '&cBrak peta'
+      lore: []
+
+    costume_info:
+      slot: 20
+      material: RED_STAINED_GLASS_PANE
+      name: '&cKostiumy mozesz zdobyc...'
+      lore:
+        - '&cKostiumy mozesz zdobyc poprzez zakup'
+        - '&cspecjalnych pakietów okazyjnych na naszej'
+        - '&cstronie &4www.frytashub.pl'
+
+    center_glass:
+      slot: 22
+      material: RED_STAINED_GLASS_PANE
+      name: ' '
+      lore: []
+
+    pet_info:
+      slot: 24
+      material: RED_STAINED_GLASS_PANE
+      name: '&cPeta mozesz zdobyc...'
+      lore:
+        - '&cPeta mozesz zdobyc poprzez zakup'
+        - '&cklucza w sklepie za czas lub'
+        - '&cna naszej stronie &4www.frytashub.pl'
+
+    parrot_info:
+      slot: 31
+      material: PARROT_SPAWN_EGG
+      name: '&cBrak papuszki'
+      lore: []
+
+    armor_stand:
+      slot: 45
+      material: ARMOR_STAND
+      name: '&6Kostiumy'
+      lore:
+        - ' &8» &7W tym miejscu odnajdziesz pełną liste'
+        - ' &8» &7wszystkich dostępnych &ekostiumów '
+        - ' &8» &7wraz z ich efektami dodatkowymi!'
+        - ''
+        - ' &8» &aKliknij &2LEWYM&a, aby przejść!'
+
+    close_button:
+      slot: 49
+      material: BARRIER
+      name: '&cZamknij'
+      lore: []
+
+    costume_inactive_glass:
+      slot: 20
+      material: RED_STAINED_GLASS_PANE
+      name: '&cKostium nieaktywny'
+      lore:
+        - '&8» &4Nie masz obecnie założonego'
+        - '&8» &4żadnego kostiumu!'
+        - ''
+        - '&8» &4Takowy kostium możesz zakupić'
+        - '&8» &4na stronie &cpaczkiuherbaty.pl!'
+
+    costume_active_glass:
+      slot: 20
+      material: LIME_STAINED_GLASS_PANE
+      name: '&aKostium aktywny'
+      lore:
+        - '&8» &7Posiadasz &aaktywny&7 kostium'
+        - '&8» &7Wygasa za: &f%time%'
+
+    remove_costume_button:
+      slot: 19
+      material: RED_DYE
+      name: '&cZdejmij kostium'
+      lore:
+        - '&8» &7Kliknij, aby zdjąć &fkostium!'
+
+    extend_costume_button:
+      slot: 21
+      material: LIME_DYE
+      name: '&aPrzedłuż kostium'
+      lore:
+        - '&8» &7Koszt przedłużenia:'
+        - '&8» &a10,000$'
+        - ''
+        - '&8» &aPrzedłużenie kostiumu wydłuży'
+        - '&8» &7ważność kostiumu aż o &a1 dzień'
+        - ''
+        - '&8» &aKliknij &2LEWYM&a, aby przedłużyć!'
+
+    pet_visibility:
+      slot: 50
+      material: REDSTONE_TORCH
+      name: '&aWidoczność peta'
+      lore:
+        - '&8» &7Denerwuje ciebie twój zwierzak?'
+        - '&8» &7Jeżeli tak to wystarczy, że ukryjesz'
+        - '&8» &7go tą funkcją!'
+        - ''
+        - '&8» &7Status: &a%status%'
+        - '&a» &aKliknij, aby %action%!'
+      toggled:
+        ff033f9c-1429-33d9-8bbe-8230324e6876: true
+
+    egg:
+      slot: 53
+      material: EGG
+      name: '&6Pety'
+      lore:
+        - ' &8» &7W tym miejscu odnajdziesz pełną liste'
+        - ' &8» &7wszystkich dostępnych &ezwierząt '
+        - ' &8» &etowarzyszących&7 wraz z ich efektami dodatkowymi!'
+        - ''
+        - ' &8» &aKliknij &2LEWYM&a, aby przejść!'
+
+    parrot_remove_button:
+      slot: 30
+      material: RED_DYE
+      name: '&cZdejmij papuszkę'
+      lore:
+        - '&8» &7Kliknij, aby zdjąć &fpapuszke!'
+
+    parrot_reroll_button:
+      slot: 32
+      material: LIME_DYE
+      name: '&aPrzelosuj bonusy papuszki'
+      lore:
+        - '&8» &7Twoja papuszka posiada unikalne'
+        - '&8» &7bonusy, które możesz zmienić'
+        - '&8» &7klikając w ten przycisk!'
+        - ''
+        - '&8» &7Koszt przelosowania: &f%cost%$'
+        - '&8» &aKliknij &2LEWYM&a, aby przelosować!'
+
+
+    pet_active_glass:
+      slot: 24
+      material: LIME_STAINED_GLASS_PANE
+      name: '&aPet Aktywny'
+      lore:
+        - '&8» &7Posiadasz &aaktywnego &7peta'
+        - '&8» &7Wygasa za: &f%time%'
+
+    pet_inactive_glass:
+      slot: 24
+      material: RED_STAINED_GLASS_PANE
+      name: '&cBrak peta'
+      lore:
+        - '&8» &4Nie masz obecnie założonego'
+        - '&8» &4żadnego peta!'
+        - ''
+        - '&8» &4Takowego peta możesz zakupić'
+        - '&8» &4na stronie &cpaczkiuherbaty.pl!'
+
+    remove_pet_button:
+      slot: 23
+      material: RED_DYE
+      name: '&cZdejmij peta'
+      lore:
+        - '&8» &7Kliknij, aby zdjąć &fpeta!'
+
+    extend_pet_button:
+      slot: 25
+      material: LIME_DYE
+      name: '&aPrzedłuż peta'
+      lore:
+        - '&8» &7Koszt przedłużenia:'
+        - '&8» &a5000$'
+        - ''
+        - '&8» &aPrzedłużenie kostiumu wydłuży'
+        - '&8» &7ważność peta aż o &a1 dzień'
+        - ''
+        - '&8» &aKliknij &2LEWYM&a, aby przedłużyć!'
+
+    fillers:
+      material: GRAY_STAINED_GLASS_PANE
+      name: ' '
+      lore:
+        - ""
+        - "&a&lBONUSY:"
+        - "&8» &7+2 Atak"
+        - ""
+        - "&a&lSPECJAŁ:"
+        - "&8» &7Brak"
+      slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 12
+        - 13
+        - 14
+        - 16
+        - 17
+        - 18
+        - 19
+        - 21
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 46
+        - 47
+        - 48
+        - 51
+        - 52
+
+settings:
+  pet_system:
+    default_duration_days: 7
+    extension:
+      cost: 5000.0
+      days_added: 1
+      use_money: true
+  costume_system:
+    extension:
+      cost: 10000.0
+      days_added: 1
+      use_money: true
+    mikolaj:
+      snow_destroyable: false
+    mime:
+      title: "&f100% Szansa na odbicie ciosu"
+      subtitle: "&7Pozostało: &f%time%s"
+    stealing:
+      malego_urwisa:
+        percentage: 3.0
+        title: "&aKradziez!"
+        subtitle: "&fUkradles &a%amount%$ &fgraczowi &c%player%"
+      grincha:
+        percentage: 3.0
+        title: "&aKradziez!"
+        subtitle: "&fUkradles &a%amount%$ &fgraczowi &c%player%"
+      pirata:
+        percentage: 3.0
+        title: "&aKradziez!"
+        subtitle: "&fUkradles &a%amount%$ &fgraczowi &c%player%"
+  parrot_system:
+    default_id: szachraj
+    default_duration_days: 14
+    reroll_cost: 500.0
+    spawn_entity: false
+    effects:
+      szybkosc_1:
+        name: '&bszybkości 1'
+        type: SPEED
+        amplifier: 0
+      szybkosc_2:
+        name: '&bszybkości 2'
+        type: SPEED
+        amplifier: 1
+      sila_1:
+        name: '&csiły 1'
+        type: INCREASE_DAMAGE
+        amplifier: 0
+      odpornosc_1:
+        name: '&9odporności 1'
+        type: DAMAGE_RESISTANCE
+        amplifier: 0
+      odpornosc_2:
+        name: '&9odporności 2'
+        type: DAMAGE_RESISTANCE
+        amplifier: 1
+      brak_glodu:
+        name: '&6braku głodu'
+        type: NO_HUNGER
+        amplifier: 0
+      odpornosc_upadek:
+        name: '&fodporności na upadek'
+        type: FALL_DAMAGE_RESISTANCE
+        amplifier: 0
+      regeneracja_1:
+        name: '&dregeneracji 1'
+        type: REGENERATION
+        amplifier: 0
+      zycie_1:
+        name: '&c+2 serca'
+        type: HEALTH_BOOST
+        amplifier: 0
+      pospiech_1:
+        name: '&eszybkiego kopania 1'
+        type: FAST_DIGGING
+        amplifier: 0
+  hologram:
+    format: '&f[{pet}&f] &f{player}'
+    offset_y: 1.8
+
+
+gui_costumes:
+  title: '              &8ᴋᴏꜱᴛɪᴜᴍʏ'
+  rows: 6
+  items:
+    back_button:
+      slot: 49
+      material: ARROW
+      name: '&cPowrót'
+      lore: []
+
+    walentynkowy:
+      slot: 20
+      material: LEATHER_CHESTPLATE
+      color: '#FF69B4'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmZhNWMyNmQ3ODIxYmEwNzgzZTQ3NzA1NTUzMTQxYjZkNDdmYjNkODQ4ODVhODUxZWYwNTM1YzRlM2FmYzY4OCJ9fX0=
+      name: '&dKostium &5walentynkowy'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany jako pierwszy w historii serwerów'
+        - '&7w dniu &aWalentynek (2025)&7, aby uczcić miłość!'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &c+5 serc'
+        - '  &8» &e100% &7odporności od upadku'
+        - '  &8» &b+5% &7obrony'
+        - '  &8» &c12% &7dodatkowych obrażeń'
+        - ''
+
+    przeciwzakazeniowy:
+      slot: 21
+      material: LEATHER_CHESTPLATE
+      color: '#00FF00'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTI4MzA0Y2RjOTY1YzQxNzQwNWY5NjVjM2I2M2NhNGZiZjg2ZTg4ZTM0MWQ2OTMyN2NhMjdlM2EwOGMwYTIwMCJ9fX0=
+      name: '&7Kostium &aprzeciwzakażeniowy'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie unikatowego'
+        - '&7wydarzenia &f21 marca 2025 roku &7(&aZARAZA&7)'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &7Po kliknięciu &azarażasz &7przeciwnika,'
+        - '  &7zadając mu większe &cobrażenia'
+        - '  &8» &c+3 serca'
+        - '  &8» &7Odporność na &cnegatywne efekty'
+        - '  &8» &b+10% &7obrony'
+        - ''
+
+    zbojczego_krolika:
+      slot: 22
+      material: LEATHER_CHESTPLATE
+      color: '#FFFFFF'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWY5ODMzN2I4MjQyMjI5ZDk1ZGEzMDkwNzU1Nzg5Nzc4YjE4YmY1ZDA3ZDYxZjYyMGNkYmRiYmQyOWZhNjE1In19fQ==
+      name: '&7Kostium &fzabójczego królika'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fwielkanocnego 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &7Po pęknięciu &etotemu &7otrzymasz &csiłę 2'
+        - '  &8» &7Możliwość &bpodwójnego skoku &7co &b15 sekund'
+        - '  &8» &e100% &7odporności od upadku'
+        - '  &8» &7Stały efekt &eszybkiego kopania 2'
+        - ''
+
+    malego_urwisa:
+      slot: 23
+      material: LEATHER_CHESTPLATE
+      color: '#FFD700'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ2N2IyYThmY2E4YmQxNTljMmUxOTQ3OTQ3YmQxZDU2MmZiYzI3MTZlZmVlNDhkNTU3OTRmZTUzNWVmYmEifX19
+      name: '&7Kostium &emałego urwisa'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany z okazji &bdnia dziecka 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &7Stały efekt &bszybkości biegania 2'
+        - '  &8» &7Po zabiciu gracza kradniesz mu &e3% &7majątku'
+        - '  &8» &e50% &7odporności od upadku'
+        - '  &8» &c10% &7dodatkowych obrażeń'
+        - ''
+
+    pirata:
+      slot: 24
+      material: LEATHER_CHESTPLATE
+      color: '#8B4513'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2E1MTMzYzFlNDAwODQyNWFkYjE0NTBlYjhmNmU4YjZhNGRiNDY1OTI1OWRmMjNlYWQ3ODc0MjU2ZjhjYmM0NyJ9fX0=
+      name: '&7Kostium &6pirata'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fpirackiego 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &b-5% &7obrony'
+        - '  &8» &7Podwójna &ckradzież serc &7po zabiciu gracza'
+        - '  &8» &7Po zabiciu gracza kradniesz mu &e3% &7majątku'
+        - '  &8» &c13% &7dodatkowych obrażeń'
+        - ''
+
+    nurka:
+      slot: 29
+      material: LEATHER_CHESTPLATE
+      color: '#008080'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjc2OTgxN2MzMmVjNGIwZDNiM2NkYzUwOGE0ZDZjOGExOTFhMjUyMzA2MzRkMWYwMGU1N2E3NzRkNGNiODhhOCJ9fX0=
+      name: '&7Kostium &bnurka głębinowego'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fwakacyjnego 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &7Po wejściu do wody otrzymujesz'
+        - '  &7co jakiś czas &bgrację delfina'
+        - '  &8» &c+4 serca'
+        - '  &8» &7Stały efekt &bszybkości biegania 2'
+        - '  &8» &b+30% &7obrażeń w wodzie'
+        - ''
+
+    mima:
+      slot: 30
+      material: LEATHER_CHESTPLATE
+      color: '#000000'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjUxMmE3ZWI2ZDMxNmU2NDNmMWViM2FhMDU1NDAxMDQ1ZmE3NDA4NmZiOGMzMmFiZWNhMmFhMzVhMTE3OWIifX19
+      name: '&7Kostium &dmima'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fcyrkowego 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &cLustro bólu&7, które przenosi obrażenia'
+        - '  &7otrzymane na &ewroga &7(3x shift)'
+        - '  &8» &c+4 serca'
+        - '  &8» &c11% &7dodatkowych obrażeń'
+        - ''
+
+    wampira:
+      slot: 31
+      material: LEATHER_CHESTPLATE
+      color: '#4B0082'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTNkMzg1MTIxMjI4MGU3Mzk2NjhkMDZhYjQ0NTM1ODFlZWVmNzlhNjNhZWZhNjA5YzJkNTgxOGI4MzJlM2RlZSJ9fX0=
+      name: '&7Kostium &cwampira'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fhalloween 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &cPocałunek wampira &7leczy gracza za &e7%'
+        - '  &7zadanych obrażeń!'
+        - '  &8» &c+4 serca'
+        - '  &8» &7Otrzymujesz umiejętność bezprzewodowego'
+        - '  &7otwierania &bshulkerów&7!'
+        - '  &8» &c10% &7dodatkowych obrażeń'
+        - ''
+
+    mikolaja:
+      slot: 32
+      material: LEATHER_CHESTPLATE
+      color: '#FF0000'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzYyZjlmMmQ1ZDUyYTQyYzIxY2Q0Y2Y5ZGQ1ZDE5YjgwNDdiOTIwODdmY2I4ZjZjNmM3ODEzMWQ5ZWNkOWNkMSJ9fX0=
+      name: '&7Kostium &cmikołaja'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fświątecznego 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &c+6 serc'
+        - '  &8» &b+5% &7obrony'
+        - '  &8» &7Podczas chodzenia zostawiasz za sobą śnieg,'
+        - '  &7który &bspowalnia &7przeciwników'
+        - '  &8» &c8% &7dodatkowych obrażeń'
+        - ''
+
+    prezydenta:
+      slot: 13
+      material: LEATHER_CHESTPLATE
+      color: '#0B0069'
+      value: ewogICJ0aW1lc3RhbXAiIDogMTc1MTkzMDM3NDgzOCwKICAicHJvZmlsZUlkIiA6ICIyMWUzNjdkNzI1Y2Y0ZTNiYjI2OTJjNGEzMDBhNGRlYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJHZXlzZXJNQyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9mOTUxNzUxMTE1MmU4OTIxNDc5ODhjZmYwZDhhYTBjMTI1MDllNTM0ZDVlNjBkOTQxZjZlMzMyNzllZTgxM2FkIgogICAgfQogIH0KfQ==
+      name: '&7Kostium &9prezydenta'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fwyborów prezydenckich 2026&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &c+3 serca'
+        - '  &8» &c5% &7dodatkowych obrażeń'
+        - '  &8» &7Odporność na &cnegatywne efekty'
+        - '  &8» &7Po kliknięciu &boznaczasz &7przeciwnika,'
+        - '  &7zadając mu większe &cobrażenia'
+        - ''
+
+
+    grincha:
+      slot: 33
+      material: LEATHER_CHESTPLATE
+      color: '#32CD32'
+      value: ewogICJ0aW1lc3RhbXAiIDogMTYwNjMxMDc1MzQ2MiwKICAicHJvZmlsZUlkIiA6ICJiMGQ3MzJmZTAwZjc0MDdlOWU3Zjc0NjMwMWNkOThjYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJPUHBscyIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81NGY0OWFkZmFkY2E5ODRlMDJiNzE2NmQyNjdjNDgzYjgxZWI5OTZmZTQ3N2FiYmUyY2U2YWNhM2EwYjVhOGY3IgogICAgfQogIH0KfQ==
+      name: '&7Kostium &agrincha'
+      lore:
+        - '&8Unikatowa wersja!'
+        - ''
+        - '&7Został on wydany w trakcie wydarzenia'
+        - '&fświątecznego 2025&7.'
+        - ''
+        - '&7Dzięki temu przedmiotowi otrzymasz'
+        - '&funikatowy wygląd &7oraz &fepickie bonusy'
+        - ''
+        - '&7Lista bonusów:'
+        - '  &8» &c+3 serca'
+        - '  &8» &7Po zabiciu gracza kradniesz mu &e3% &7majątku'
+        - '  &8» &c10% &7dodatkowych obrażeń'
+        - '  &8» &7Blokuje przedmioty &feventowe'
+        - ''
+
+gui_pets:
+  title: '                 &8ᴘᴇᴛʏ'
+  rows: 6
+  items:
+    back_button:
+      slot: 49
+      material: ARROW
+      name: '&cPowrót'
+      lore: []
+
+    aniolek:
+      slot: 1
+      material: PLAYER_HEAD
+      name: '&fPet Aniołek na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjQyODA3Mjk2YjQxOWFmMDYxZjJmOWQzNmRkMTlhODhiZjc1NGQyYWJjODVmNzMxZDQ1ZjJlN2JiYzkyOTk5ZCJ9fX0=
+      animation: follow
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &cszybkości I'
+        - '&8» &c+10% &7obrony od wszystkich obrażeń'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    pancernik:
+      slot: 2
+      material: PLAYER_HEAD
+      name: '&dPet Pancernik na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzcwMThhMGRmMzYyNjNjZTQ3NjIwNmNhM2JmMGQ4OTRlNzJmZDBlNjU1YTU3NTNhNzdhNzNmMTQyNDViN2RhIn19fQ==
+      animation: follow
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &codporności II'
+        - '&8» &7Stały efekt &cspowolnienia I'
+        - '&8» &c-50% &7obrażeń od upadku'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    pudzianek:
+      slot: 3
+      material: PLAYER_HEAD
+      name: '&cPet Pudzianek na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjE3OWFlNzlkMGNjZmE0MGNmMWQwMDczNjkwY2MzNjMwNjUzYjA3ZGUyYTA5ZDhlOTRlYjU4NTM4N2E2YjBkMiJ9fX0=
+      animation: bounce
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+2 &7dodatkowych obrażeń'
+        - '&8» &7Stały efekt &cspowolnienia II'
+        - '&8» &c+2 &7serca'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    pedziwiatr:
+      slot: 4
+      material: PLAYER_HEAD
+      name: '&bPet Pędziwiatr na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzYyNmIxZmY1ZmQyY2IwYzFhZWI1MzYxMzIzMmZmZThhYjgxYmQzM2Q1NWJlMWYzYTkyZTdkNmZjN2ZkNjNhMCJ9fX0=
+      animation: follow
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &cszybkości II'
+        - '&8» &7Stały efekt potki &cwysoki skok II'
+        - '&8» &c+10% &7podatności na obrażenia'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    glodomorek:
+      slot: 5
+      material: PLAYER_HEAD
+      name: '&6Pet Głodomorek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjBmYTc2MmEwNWEzNWRhMjc2ZmI4MzdiNTY4MDc3YjgzMjE2NThjOGZmYWQxZGQwMTNmZDIyZTI4YzAzNWJiZCJ9fX0=
+      animation: follow
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - '&8» &c+1 &7serce'
+        - '&8» &cDodatkowe &7Punkty &6Lotto'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    skalniaczek:
+      slot: 6
+      material: PLAYER_HEAD
+      name: '&8Pet Skalniaczek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk4NWY3MGI1YWM0M2RlNzJhYTgwNzcyZTE0MWU0ZjUzOGIyMzIwYzdhM2IyZWFmM2Q5NGMwOWEzMzI0MTNmMiJ9fX0=
+      animation: follow
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &codporności II'
+        - '&8» &7Stały efekt &cspowolnienia II'
+        - '&8» &c+2 &7serca'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    biznesmenik:
+      slot: 7
+      material: PLAYER_HEAD
+      name: '&aPet Biznesmenik na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkNTUzYmM3ZWZhOTE4YmQ3MTY3ZDVlYzg2OTU1YWU1ZmEzOTEzOGNlZmY2NDI1NGZlYjEzMTU2NGEwIn19fQ==
+      animation: follow
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &cPodwaja &7drop z surowców i farm'
+        - '&8» &7Zwiększony zarobek piniędzy'
+        - '&8» &c+10% &7podatności na obrażenia'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    discordzik:
+      slot: 10
+      material: PLAYER_HEAD
+      name: '&bPet Discordzik na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmM4NGQxYTkwOTVhNjNmNDc1NDY3MjBmZTdmNmVkZjAzZTEyMjc2ZTA2MmI4NTNlMjA3YTVjNjk3ZjFlNTIxIn19fQ==
+      particles: NOTE
+      animation: bounce
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+1 &7dodatkowych obrażeń'
+        - '&8» &c+1 serce'
+        - ''
+        - '&7Koszt przedłużenia: &c3 serc za dzień'
+
+    duszek:
+      slot: 11
+      material: PLAYER_HEAD
+      name: '&bPet Duszek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFhMWE2MTk5NjBhYzY4NjBjYjVjOWI2ZDNjODg3NDVkNmVmNjQwMzAwOWFmNWJhMGQwODM4Yjg3YjEyZGYwNCJ9fX0=
+      particles: SOUL
+      animation: circle
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &cszybkości I'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - '&8» &c-50% &7obrażeń od dripstone'
+        - '&8» &c+1 &7serce'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    nietoperek:
+      slot: 12
+      material: PLAYER_HEAD
+      name: '&bPet Nietoperek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzI5Mzk3ZDRhM2I0YWFlN2E4MjgwOWNhNGMyOThiNjVlYjZkZTljNjNjZDYzMzI3OWVlZmM5NzVmZDczYjA2NSJ9fX0=
+      particles: SMOKE_NORMAL
+      animation: circle
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+10% &7obrony od wszystkich obrażeń'
+        - '&8» &cPodwaja &7drop z surowców i farm'
+        - '&8» &7Stały efekt potki &cszybkości II'
+        - '&8» &c+2 &7dodatkowych obrażeń'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    reniferek:
+      slot: 13
+      material: PLAYER_HEAD
+      name: '&bPet Reniferek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmI3ZjU2OTQxNTYyMTA5ZGRlNWExMzg2MGE5ODI3ZDU2YWYzOGZhYTU0NzE3MWVkMWRiZTdhNmEwNWZjOGZmMiJ9fX0=
+      particles: SNOWBALL
+      animation: bounce
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &cszybkości I'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - '&8» &c-50% &7obrażeń od dripstone'
+        - '&8» &c+1 &7serce'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    balwanek:
+      slot: 14
+      material: PLAYER_HEAD
+      name: '&bPet Bałwanek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODdiYTE0NjI0NWRhMDE2NWU2YTQ1OWQwZGMyZDEyZDc3YTk2OTAzMmQxYzU2YWEwYjA5MTYwNTlmMjAyZGRkIn19fQ==
+      particles: SNOW_SHOVEL
+      animation: rotate
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+10% &7obrony od wszystkich obrażeń'
+        - '&8» &cPodwaja &7drop z surowców i farm'
+        - '&8» &7Stały efekt potki &cszybkości II'
+        - '&8» &c+2 &7dodatkowych obrażeń'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    golemik:
+      slot: 15
+      material: PLAYER_HEAD
+      name: '&bPet Golemik na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGE2ZTA0MjljY2FhYmI2ZjVmMGM1ZDUxM2M3OTViZWQ2ZDgwZmNlNzJmNTdmNGJjM2E2MTZhZWUyM2UxMjU3MiJ9fX0=
+      particles: VILLAGER_HAPPY
+      animation: follow
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+10% &7obrony od wszystkich obrażeń'
+        - '&8» &c-50% &7obrażeń od dripstone'
+        - '&8» &c+1 serce'
+        - ''
+        - '&7Koszt przedłużenia: &c4 serc za dzień'
+
+    eustachy:
+      slot: 16
+      material: PLAYER_HEAD
+      name: '&2Pet Eustachy na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDAxZTAzNWEzZDhkNjEyNjA3MmJjYmU1MmE5NzkxM2FjZTkzNTUyYTk5OTk1YjVkNDA3MGQ2NzgzYTMxZTkwOSJ9fX0=
+      particles: HEART
+      animation: circle
+      lore:
+        - '&8Przedmiot unikatowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &cszybkości II'
+        - '&8» &cPodwaja &7drop z surowców i farm'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    enderman:
+      slot: 19
+      material: PLAYER_HEAD
+      name: '&dPet Enderman na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmE2NDlhM2QxYWFlODgwYWNjYzQ3M2M2YzE1YTYzZWU1Y2IwMGYwNjAzMTkzZmM5ZjdjYzkxODdkODAzNmM3ZSJ9fX0=
+      particles: PORTAL
+      animation: circle
+      lore:
+        - '&8Przedmiot rzadki'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Zwiększony drop pereł w &dendzie'
+        - '&8» &c+3 &7dodatkowe obrażenia'
+        - ''
+        - '&7Koszt przedłużenia: &c5 serc za dzień'
+
+    zajaczek:
+      slot: 20
+      material: PLAYER_HEAD
+      name: '&bPet Zajączek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjYxODBiYmY4YTI4MDNiNjM3YWVjMjM1NjQ1NTQ5NjJhY2JlYjkwMTBhMDBkMTM2MzYxM2FjMzk4Nzc3NDlkMyJ9fX0=
+      particles: VILLAGER_HAPPY
+      animation: bounce
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &cwysoki skok II'
+        - '&8» &c+4 &7dodatkowe obrażenia'
+        - '&8» &7Stały efekt potki &cszybkości I'
+        - '&8» &c-50% &7obrażeń od upadku'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    pisklak:
+      slot: 21
+      material: PLAYER_HEAD
+      animation: follow
+      name: '&6Pet Pisklak na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzkzMjkyMGY4MWI2YzU2ZmVkNmNkNWUwNzc3MmZkNTQwMjQ2NTgyMjkyYjU2YzAzNDViZWIzMGQwMzNkNmVhYiJ9fX0=
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - '&8» &c+2 &7serca'
+        - '&8» &cPodwaja &7drop z surowców i farm'
+        - '&8» &c+10% &7obrony od wszystkich obrażeń'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    cukiereczek:
+      slot: 22
+      material: PLAYER_HEAD
+      name: '&dPet Cukiereczek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWI0YjVjNzQ4MzA2MDlmOWNlN2JmYjhjYTI2ZmFjMTcxZWRiYzZiMjdjNjM3ZWExMDFmYzFhZTFhMmZhYzQ0MSJ9fX0=
+      particles: HEART
+      animation: bounce
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+2 &7dodatkowych obrażeń'
+        - '&8» &c15% &7odporności na miecze'
+        - '&8» &7Odporność na &eogień'
+        - '&8» &7Stały efekt potki &bszybkości II'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    rozdymek:
+      slot: 23
+      material: PLAYER_HEAD
+      name: '&ePet Rozdymek na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI2NmY1NGExZjJiODZmZDhmZDAxNjNhOWQyMmE5YjZiM2E0YzkzODk1Mjk3YmM3ZWU2Nzg4NzA4ZjRkOTc0NSJ9fX0=
+      particles: WATER_BUBBLE
+      animation: circle
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &bOddychanie &7pod wodą'
+        - '&8» &7Zwiększony drop z łowienia'
+        - '&8» &a50% &7mniej czasu negatywnych efektów'
+        - '&8» &7Stały efekt potki &bszybkości II'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    pajak:
+      slot: 24
+      material: PLAYER_HEAD
+      name: '&cPet Pająk na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNmYWM1Zjc0NDg1YmM5Y2VlODdkNmY4MmE3ZWUwZWM0ZjY2OWM2MGY0MjVkNDliM2VlNTNiOWU2YzU4MzAifX19
+      particles: CRIT_MAGIC
+      animation: circle
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Odporność na &dnegatywne efekty'
+        - '&8» &7Stały efekt potki &cwysoki skok II'
+        - '&8» &7Stały efekt potki &bszybkości II'
+        - '&8» &c-100% &7obrażeń od upadku'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    sowa:
+      slot: 25
+      material: PLAYER_HEAD
+      name: '&6Pet Sowa na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTg2OWY2Nzk2MWYzZWU1YjY4ZTM4Zjc5ODU3MDY4ZWQxNmNiZGYwZjhjOWNlYTJkNzUwNGZjOGRmODcxZDFkNyJ9fX0=
+      particles: ENCHANTMENT_TABLE
+      animation: circle
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+3 &7dodatkowych obrażeń'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - '&8» &7Podgląd &czycia &7przeciwnika'
+        - '&8» &7Stały efekt potki &bszybkości I'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    drakula:
+      slot: 28
+      material: PLAYER_HEAD
+      name: '&cPet Drakula na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGMwNTk4ZjY4YzAyNGFhMTQ2OTgzZTg2OTRjMDBjMGEyZjNmMWVhMWQ3OWIyYjM4MWJhYzc5ZTU4NjhkNjRjYSJ9fX0=
+      particles: REDSTONE
+      animation: rotate
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Wytrzymałość uzbrojenia &f+20%'
+        - '&8» &c10% &7na kradzież życia'
+        - '&8» &c+2 &7serca'
+        - '&8» &7Stały efekt potki &bszybkości II'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    leniuszek:
+      slot: 29
+      material: PLAYER_HEAD
+      name: '&bPet Leniuszek na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmIwZmQwODM4ZDY4NmY2NGQwNDdiYmVjNzY5NWY3YzhjNjJlMmI1OTQ4OTg2ZjJmYzM3NGE5YjU1NGZiNDRkOCJ9fX0=
+      animation: follow
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &cPodwaja &7drop ze &bstrefy AFK'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    elfik:
+      slot: 30
+      material: PLAYER_HEAD
+      name: '&2Pet Elfik na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFkMzNhYjY0YzgxYjQzYmY0YmY1MjYxZGZkZDg0YjgxMjkxNTJkZDdiMTIyNjFmNWRhY2I3NzM2MjkyMmE1ZCJ9fX0=
+      particles: VILLAGER_HAPPY
+      animation: bounce
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+20% &7obrony od wszystkich obrażeń'
+        - '&8» &c-50% &7obrażeń od dripstone'
+        - '&8» &c+3 &7dodatkowych obrażeń'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    pierniczek:
+      slot: 31
+      material: PLAYER_HEAD
+      name: '&6Pet Pierniczek na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU2MzQ5MTJjNTI5NTNmMDMzZmExMTY2ODg2NjljOWE2ZDRkNTdkMzI1NjI5MTdiNTdkYTU4MzgwMmQ5ZjJlZSJ9fX0=
+      particles: HEART
+      animation: bounce
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &cPodwaja &7drop z surowców i farm'
+        - '&8» &7Stały efekt potki &cszybkości II'
+        - '&8» &c+2 &7serca'
+        - '&8» &7Większe &adoświadczenie &7z kamienia'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    paczus:
+      slot: 32
+      material: PLAYER_HEAD
+      name: '&6Pet Pączuś na czas 30 dni'
+      value: e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTgxNzE3M2ZiMTJmMjYwZjc2NzAxNGMxMmQ4NWFhZTVlMjIyMmEwZTU0M2UzYTZmNjdkMTI0YmI1N2IzN2U2ZiJ9fX0=
+      animation: follow
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &cNigdy &7nie stajesz się głodny'
+        - '&8» &7Stały efekt potki &codporności II'
+        - '&8» &7Stały efekt &cspowolnienia I'
+        - '&8» &7Stały efekt potki &dregeneracji I'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    telekrolik:
+      slot: 33
+      material: PLAYER_HEAD
+      name: '&9Pet Telekrólik na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2RmMjkyNmU5NzA2MTFhNjlkZTczMjZiZjgzNWY2YzA1OTI1M2NiNmUzN2UzZjgxZTc2NzZiZTE4MWQ4Mzg4MCJ9fX0=
+      particles: PORTAL
+      animation: circle
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Podgląd &czycia &7przeciwnika'
+        - '&8» &c+3 &7dodatkowych obrażeń'
+        - '&8» &c+10% &7obrony od wszystkich obrażeń'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    bobas:
+      slot: 34
+      material: PLAYER_HEAD
+      name: '&bPet Bobas na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTQ2N2IyYThmY2E4YmQxNTljMmUxOTQ3OTQ3YmQxZDU2MmZiYzI3MTZlZmVlNDhkNTU3OTRmZTUzNWVmYmEifX19
+      particles: HEART
+      animation: follow
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &c+2 &7dodatkowych obrażeń'
+        - '&8» &c10% &7odporności na miecze'
+        - '&8» &7Odporność na &eogień'
+        - '&8» &c+2 &7serca'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    cyber_obronca:
+      slot: 37
+      material: PLAYER_HEAD
+      name: '&9Pet Cyber-Obrońca na czas 30 dni'
+      value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTE2Mzk1NDQ0NjZlNTU1OWE4YzViYzNjN2YwYzVmNzM4NjcwNmY3N2IwYTAwOTljZTU1NTU5OWRlNmJmZTk1NSJ9fX0=
+      particles: REDSTONE
+      animation: rotate
+      lore:
+        - '&8Przedmiot eventowy'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Podgląd &czycia &7przeciwnika'
+        - '&8» &b30% &7odporności w &bwodzie'
+        - '&8» &7Stały efekt &eszybkości kopania 2'
+        - '&8» &c+2 &7dodatkowe obrażenia'
+        - ''
+        - '&7Koszt przedłużenia: &c6 serc za dzień'
+
+    torcik:
+      slot: 38
+      material: PLAYER_HEAD
+      name: '&dPet Torcik na czas 30 dni'
+      value: ewogICJ0aW1lc3RhbXAiIDogMTc1MzM2Nzc2OTc4MiwKICAicHJvZmlsZUlkIiA6ICI1MzE4YWJhNDJiMTk0ODNiODFiMWY2N2Y1ODVjNDdkNSIsCiAgInByb2ZpbGVOYW1lIiA6ICJocHllZiIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yNWE0NTEyYzUwNTRiZjM3YjhkZGYxODUzNDkzZmYwMTg4YzNmNTU5MTlkMmRjNGY2OGJlMzA5NzNkZWIyZTM4IgogICAgfQogIH0KfQ==
+      particles: HEART
+      animation: bounce
+      lore:
+        - '&8Przedmiot pospolity'
+        - ''
+        - '&fOtrzymasz następujące bonusy:'
+        - '&8» &7Stały efekt potki &bszybkości I'
+        - '&8» &c+2 &7dodatkowych obrażeń'
+        - '&8» &c+2 serca'
+        - ''
+        - '&7Koszt przedłużenia: &c3 serc za dzień'
+
+
+gui_parrots:
+  items:
+    szachraj:
+      material: PARROT_SPAWN_EGG
+      parrot_variant: RED
+      name: '&fPapuszka &f&lSzachraj'
+      lore:
+        - '&8Przedmiot wydarzeniowy'
+        - ''
+        - '&7Ten przedmiot mógłby zdobyty'
+        - '&7w trakcie wydarzenia &fpirackiego 2025!'
+        - ''
+        - '&fOtrzymasz następujące efekty:'
+        - '%effects%'
+        - ''
+        - '&7Zebrał: &f%collector%'
+        - '&7Przelosowano: &f%rerolls% razy'
+        - '&7Wygaśnie: &f%expiry%'
+
+messages:
+  reload: '&aPrzeladowano konfiguracje!'
+  no_permission: '&cBrak uprawnien!'
+visibility:

@@ -1,0 +1,10 @@
+# ========================================== #
+#      KONFIGURACJA OCHRONY PRZED WYBUCHAMI  #
+# ========================================== #
+
+settings:
+  # Czy TNT ma NIE niszczyć bloków? (dmg dla graczy zostaje)
+  block_tnt_block_damage: true
+
+  # Czy Creepery mają NIE niszczyć bloków? (dmg dla graczy zostaje)
+  block_creeper_block_damage: true

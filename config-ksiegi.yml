@@ -1,0 +1,124 @@
+gui:
+  title: "&8Zaklęte Książki"
+  size: 18
+
+books:
+  unik:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Unik I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &aspodnie&7!"
+      - "&7Daje szansę na uniknięcie &fuderzenia"
+    target: "PANTS"
+    custom_model_data: 0
+    effect: "dodatkowe obrażenia" 
+  
+  krytyczne:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Obrażenia krytyczne I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &amiecz&7!"
+      - "&7Zwiększa krytyczne obrażenia"
+    target: "SWORD"
+    custom_model_data: 0
+  
+  szybkosc:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Szybkości I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &abuty&7!"
+      - "&7Otrzymujesz stały efekt &fszybkości I"
+    target: "BOOTS"
+    custom_model_data: 0
+  
+  wampiryzm:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Wampiryzm I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &amiecz&7!"
+      - "&7Masz szansę na odzyskanie części"
+      - "&7zdrowia z zadanych &cobrażeń!"
+    target: "SWORD"
+    custom_model_data: 0
+  
+  wytrzymalosc:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Wytrzymałości I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &auzbrojenie&7!"
+      - "&7Spowalnia niszczenie się zbroi"
+    target: "ARMOR"
+    custom_model_data: 0
+
+  regeneracja:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Regeneracji I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &anapierśnik&7!"
+      - "&7Nałożony daje szansę, że po"
+      - "&7otrzymanym uderzeniu otrzymasz efekt"
+      - "&7regeneracji II na krótki czas."
+    target: "CHESTPLATE"
+    custom_model_data: 0
+
+  pospiech:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Pośpiech I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &akilof&7!"
+      - "&7Otrzymujesz stały efekt &fpośpiechu II"
+    target: "PICKAXE"
+    custom_model_data: 0
+
+  spowolnienie:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Spowolnienie I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &amiecz&7!"
+      - "&7Masz szansę, że gracza, którego uderzysz"
+      - "&7otrzyma efekt spowolnienia I."
+    target: "SWORD"
+    custom_model_data: 0
+
+  niepodpalanie:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Niepodpalanie I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &ahełm&7!"
+      - "&7Otrzymujesz stały efekt &fodporności na"
+      - "&fogień"
+    target: "HELMET"
+    custom_model_data: 0
+
+  otrucie:
+    name: "&eZaklęta książka"
+    lore:
+      - "&7Otrucie przeciwnika I"
+      - ""
+      - "&2&lZaklęcie specjalne!"
+      - "&7Może zostać nałożony na &amiecz&7!"
+      - "&7Masz szansę, że gracza, którego uderzysz"
+      - "&7otrzyma efekt trucizny I."
+    target: "SWORD"
+    custom_model_data: 0
+
+settings:
+  off-function: true

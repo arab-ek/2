@@ -1,0 +1,275 @@
+messages:
+  blocked_region: "&cNie mozesz tu uzywac tego przedmiotu!"
+  blocked_region_title: "&#FF0000✘"
+  blocked_region_subtitle: "&#EC0000Nie możesz tego użyć!"
+  bedrock_destroy_error: "&cNie mozesz niszczyc naturalnego bedrocka!"
+  no_permission: "&cNie masz uprawnien do tego przedmiotu!"
+  cooldown_active: "&cMusisz poczekac przed ponownym uzyciem!"
+
+gui:
+  title: "Custom itemy anarchia:"
+
+items:
+  cieple_mleko:
+    enabled: true
+    use_title: "&9&lGorące Mleko"
+    use_subtitle: "&7Usunieto negatywne efekty!"
+  rozga:
+    enabled: false
+    use_title: "&6&lROZGA"
+    use_subtitle: "&7Odpchnieto gracza &f%victim_player%&7!"
+    victim_title: "&c&lROZGA"
+    victim_subtitle: "&7Gracz &f%player% &7uzyl na Tobie rozgi!"
+  lewe_jajko:
+    enabled: true
+    use_title: "&e&lLewe jajo"
+    use_subtitle: "&fWystrzeliłeś gracza &e%victim_player%"
+    victim_title: "&e&lLewe jajo"
+    victim_subtitle: "&fGracz &6%player% &fwystrzelił cię w powietrze!"
+  bombarda_maxina:
+    enabled: true
+    use_title: "&5&lBombarda maxima"
+    use_subtitle: "&fWysadziłeś wszystko do &cokoła!"
+  sniezka:
+    enabled: true
+    use_title: "&f&lŚnieżka"
+    use_subtitle: "&fZamieniłeś się z &b%victim_player%"
+    victim_title: "&f&lŚnieżka"
+    victim_subtitle: "&fGracz &b%player% &frzucił w ciebie śnieżką!"
+  lopata_grincha:
+    enabled: true
+    use_title: "&b&lZamrożenie"
+    use_subtitle: "&fZamroziłeś gracza &3%victim_player%&7!"
+    victim_title: "&b&lZamrożenie"
+    victim_subtitle: "&fJesteś &3zamrożony"
+  kosa:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&fOślepiłeś gracza &#03c2fc%victim_player%"
+    victim_title: "&8&lOślepienie"
+    victim_subtitle: "&fJesteś oślepiony na &#03c2fc5 sek!"
+  marchewkowy_miecz:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&fZamroziłeś gracza &#03c2fc%victim_player%"
+    victim_title: "&#03c2fc&lZamrożenie"
+    victim_subtitle: "&fJesteś zamrożony na &#03c2fcsekundę!"
+  wedka_surferka:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&fUżyłeś &bwędki surfera!"
+  marchewkowa_kusza:
+    enabled: true
+    use_title: "&6Marchewkowa kusza"
+    use_subtitle: "&fPostrzeliłeś gracza &e%victim_player%"
+    victim_title: "&6Marchewkowa kusza"
+    victim_subtitle: "&fGracz &6%player% &fpostrzelił cię kuszą!"
+  piernik:
+    enabled: true
+    use_title: "&6&lPierniczek"
+    use_subtitle: "&eOtrzymałeś efekt &6Haste 10!"
+  piekielna_tarcza:
+    enabled: true
+    use_title: "&c&lPiekielna tarcza"
+    use_subtitle: "&fOdbiłeś cios gracza &c%player%"
+    victim_title: "&c&lPiekielna tarcza"
+    victim_subtitle: "&fGracz &c%victim_player% &fodbił twój cios!"
+  dynamit:
+    enabled: true
+    use_title: "&4&lDynamit"
+    use_subtitle: "&cUsunięto skałę &4macierzystą!"
+  zatruty_olowek:
+    enabled: true
+    use_title: "&a&lZatruty ołówek"
+    use_subtitle: "&2Zatrułeś gracza &a%victim_player%"
+    victim_title: "&a&lZatruty ołówek"
+    victim_subtitle: "&2Zostałeś zatruty przez &a%player%"
+  roza_kupidyna:
+    enabled: false
+    use_title: " "
+    use_subtitle: " "
+
+  roza_kupidyna_2026:
+    enabled: false
+    use_title: " "
+    use_subtitle: " "
+  krew_wampira:
+    enabled: true
+    use_title: "&c&lKrew wampira"
+    use_subtitle: "&fzostałeś &auleczony!"
+  splesniala_kanapka:
+    enabled: true
+    use_title: "&2&lSpleśniała kanapka"
+    use_subtitle: "&aZaraziłeś gracza &2%victim_player%"
+    victim_title: "&2&lSpleśniała kanapka"
+    victim_subtitle: "&fGracz &c%player% &fzaraził Cię chorobą!"
+  parawan:
+    enabled: true
+    use_title: "&a&lParawan"
+    use_subtitle: "&aOdrzuciłeś wszystkich &2graczy!"
+    victim_title: "&a&lParawan"
+    victim_subtitle: "&aZostałeś zarażony przez &2%player%"
+  turbo_trap:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&aTwoja pułapka jest &2budowana..."
+  trojzab_posejdona:
+    enabled: true
+    shot:
+      enabled: true
+      label: "PIORUN"
+      use_title: " "
+      use_subtitle: "&7Przywołano cios &fpiorunem &7z trójzębu!"
+    launch:
+      enabled: true
+      label: "SKOK"
+      use_title: "&b&lSkok Posejdona"
+      use_subtitle: "&fWystrzelono się w górę!"
+    hit_title: " "
+    hit_subtitle: "&7Przywołano cios &fpiorunem &7z łuku!"
+    victim_title: " "
+    victim_subtitle: "&7Otrzymałeś cios &fpiorunem &7z łuku!"
+  siekiera_grincha:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&fUżyłeś &#03c2fcsiekiery grincha &fna &c%victim_player%"
+    victim_title: " "
+    victim_subtitle: "&fGracz &c%player% &fużył na tobie &#03c2fcsiekierę grincha!"
+  boski_topor:
+    enabled: true
+    use_title: "&b&lBoski Topór"
+    use_subtitle: "&fJesteś nieśmiertelny przez &b3 sekundy!"
+    victim_title: "&b&lBoski Topór"
+    victim_subtitle: "&cGracz jest chwilowo nieśmiertelny!"
+  kostka_rubika:
+    enabled: true
+    use_title: "&e&lKostka rubika"
+    use_subtitle: "&fPrzemieszałeś ekwipunek gracza &6%victim_player%!"
+    victim_title: "&e&lKostka rubika"
+    victim_subtitle: "&fGracz &6%player% &fprzemieszał ci pasek!"
+  balonik_z_helem:
+    enabled: true
+    use_title: "&3Balonik"
+    use_subtitle: "&fBalonik rozpoczął swoją &3pracę!"
+  przeterminowany_trunek:
+    enabled: true
+    use_title: "&2&lTrunek"
+    use_subtitle: "&aWyrzucono przeterminowany &2trunek!"
+    victim_title: " "
+    victim_subtitle: " "
+  zlamane_serce:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&7Złamałeś &dserce &7gracza &f%victim_player%&7!"
+    victim_title: " "
+    victim_subtitle: "&7Twoje &dserduszko &7zostało złamane!"
+  wzmocniona_elytra:
+    enabled: true
+    use_title: "&3Wzmocniona Elytra"
+    use_subtitle: "&7Użyto ogromnej mocy &felytry!"
+    victim_title: "&3Wzmocniona Elytra"
+    victim_subtitle: "&7Zostałeś trafiony przez &felytrę!"
+    charge_message: "&bWzmocniona Elytra załadowana w &3%percentage%%"
+  wedka_nielota:
+    enabled: true
+    use_title: "&a&lWędka nielota"
+    use_subtitle: "&fZłapałeś gracza &2%victim_player%!"
+    victim_title: "&a&lWędka nielota"
+    victim_subtitle: "&fZostałeś złapany na &2haczyk!"
+  zajeczy_miecz:
+    enabled: true
+    use_title: "&3&lZajęczy miecz"
+    use_subtitle: "&fZablokowałeś skakanie dla &3%victim_player%"
+    victim_title: "&3&lZajęczy miecz"
+    victim_subtitle: "&fPrzeciwnik zablokował tobie &3skakanie!"
+  jajko_creepera:
+    enabled: true
+    use_title: "&a&lCREEPER"
+    use_subtitle: "&7Przywolano zmutowanego creepera!"
+  wata_cukrowa:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&aNaprawiono &2część zbroji!"
+    no_repair_needed: "&cTwoja zbroja nie wymaga naprawy!"
+  totem_ulaskawienia:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&7Użyłeś totemu &fułaskawienia!"
+  cudowna_latarnia:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&5Cudowna Latarnia! &7Aktywowana na &d30 sekund&7!"
+    destroy_title: " "
+    destroy_subtitle: "&cTwoja latarnia została &4zniszczona&c!"
+  rozdzka_iluzjonisty:
+    enabled: true
+    lpm:
+      enabled: true
+      label: "SZCZEKI"
+      use_title: " "
+      use_subtitle: "&aSzczęki Evokera &7zostały &aaktywowane&7!"
+    ppm:
+      enabled: true
+      label: "ILUZJA"
+      use_title: " "
+      use_subtitle: "&aZniknięcie &7zostało &aaktywowane&7!"
+
+  rog_jednorozca:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&7Przywołano &fmagicznego jednorożca!"
+    stun_victim_title: " "
+    stun_victim_subtitle: "&7Zostałeś &fogłuszony&7 przez jednorożca!"
+
+  piekielny_miecz:
+    enabled: true
+    use_title: "&c&lPiekielna tarcza"
+    use_subtitle: "&fOdbiłeś cios gracza &c%victim_player%!"
+    victim_title: "&c&lPiekielna tarcza"
+    victim_subtitle: "&fGracz &c%player% &fodbił twój cios!"
+  sakiewka_dropu:
+    enabled: true
+    inventory_title: "&aSakiewka Dropu"
+    receive_button: "&aOdbierz wszystko"
+    empty_message: "&cTwoja sakiewka jest pusta!"
+    received_message: "&aPomyslnie odebrano przedmioty z sakiewki!"
+  arcus_magnus:
+    enabled: true
+    use_title: "&a&lArcus Magnus"
+    use_subtitle: "&aPostrzeliłeś gracza %victim_player% %bonus% dmg"
+  wampirze_jablko:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&cOtrzymałeś efekt &4Siła II"
+  rozgotowana_kukurydza:
+    enabled: true
+    use_title: "&2&lRozgrzana Kukurydza"
+    use_subtitle: "&aWystrzelono rozgrzaną &2kolbę!"
+    victim_title: " "
+    victim_subtitle: " "
+  hydro_klatka:
+    enabled: true
+    use_title: "&3Hydro Klatka"
+    use_subtitle: "&fStworzono &3hydro klatkę!"
+    victim_title: " "
+    victim_subtitle: " "
+  blok_widmo:
+    enabled: true
+    use_title: "&cBlok widmo"
+    use_subtitle: "&7Osłabiłeś pobliskich &agraczy!"
+    victim_title: "&cBlok widmo"
+    victim_subtitle: "&7Coś się dzieje z twoim zdrowiem..."
+    bossbar: "&cBlok widmo: &fPosiadasz obniżony limit serc przez %time%"
+
+
+  smoczy_miecz:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&fUżyłeś &#03c2fcSmoczego miecza!"
+
+  luk_kupidyna:
+    enabled: true
+    use_title: " "
+    use_subtitle: "&fOślepiłeś gracza %victim_player%"
+    victim_title: " "
+    victim_subtitle: "&fGracz &#03c2fc%player% &fcię oślepił!"

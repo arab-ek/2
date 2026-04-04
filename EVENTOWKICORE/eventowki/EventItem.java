@@ -56,7 +56,10 @@ public abstract class EventItem implements Listener {
     this.reloadConfigCache();
   }
 
-  public void reloadConfigCache() {
+    protected EventItem() {
+    }
+
+    public void reloadConfigCache() {
     String materialName = this.plugin.getConfig().getString("meta." + this.id + ".material");
     if (materialName != null && !materialName.isEmpty()) {
       try {

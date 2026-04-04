@@ -1,0 +1,38 @@
+# ========================================== #
+#      KONFIGURACJA STREFY AFK (REWARDS)     #
+# ========================================== #
+
+settings:
+  afk_zone:
+    enabled: true
+    region_name: "afk" # Nazwa regionu WorldGuard
+    standard:
+      reward_seconds: 60
+      reward_money: 100.0
+      bossbar_color: "BLUE"
+      bossbar_style: "SOLID"
+    premium:
+      reward_seconds: 120
+      reward_command: "give {player} diamond 1"
+      bossbar_color: "PURPLE"
+      bossbar_style: "SEGMENTED_10"
+      chances:
+        default: 10.0 # Procentowa szansa bazowa
+        vip: 25.0     # Permisja: core.afk.vip
+        svip: 50.0    # Permisja: core.afk.svip
+
+  spawn_afk:
+    enabled: true
+    region_name: "spawn"
+    max_idle_seconds: 300 # Po jakim czasie przenosi z regionu spawn do swiata AFK
+    teleport_world: "world"
+
+messages:
+  afk_enabled: "&aWszedles do strefy AFK! Ukryto innych graczy."
+  afk_disabled: "&cWyszedles ze strefy AFK! Widzisz juz innych graczy."
+  standard_reward_title: "&bNagroda za AFK: &f{TIME} &8(&e{PERCENTAGE}%&8)"
+  premium_reward_title: "&dPremium Nagroda ({CHANCE}%): &f{TIME} &8(&e{PERCENTAGE}%&8)"
+  standard_reward_success: "&aOtrzymano standardowa nagrode za AFK! (&f+{MONEY}$&a)"
+  premium_reward_success: "&dOtrzymano PREMIUM nagrode za AFK!"
+  premium_reward_fail: "&cNiestety, tym razem nie udalo sie wylosowac nagrody premium."
+  spawn_afk_teleported: "&7Byles zbyt dlugo AFK na spawnie! Przeteleportowano do strefy AFK."

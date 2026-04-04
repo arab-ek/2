@@ -1,0 +1,1383 @@
+gui:
+  size: 54
+
+meta:
+  size: 54
+
+  cieple_mleko:
+    material: MILK_BUCKET
+    texture-value: ""
+    name: "&9&lCiepłe Mleko"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu świątecznego (2024)'
+      - ''
+      - '&8» &7Po wypiciu usuwa wszystkie'
+      - '&8» &cnegatywne efekty&7! &7Również posiada'
+      - '&8» &7mechanikę stakowania!'
+      - ' '
+    cooldown: 0
+    infinite: false
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - ""
+
+  rozga:
+    material: STICK
+    texture-value: ""
+    name: "&6Rózga"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu świątecznego (2023)'
+      - ''
+      - '&8» &cOdrzuca &7z potężną siłą'
+      - '&8» &7niegrzecznych graczy!'
+      - ''
+    cooldown: 0
+    infinite: true
+    custom_model_data: 1
+    knockback_power: 2.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  lewe_jajko:
+    vanilla_cooldown: false
+    material: EGG
+    texture-value: ""
+    name: "&eLewe jajko"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z &fwydarzenia'
+      - '&8» &fwielkanocnego &7z &f2024 roku'
+      - ''
+      - '&8» &7Dzięki niemu możesz wyrzucić przeciwnika'
+      - '&8» &7w powietrze!'
+      - ''
+    cooldown: 15
+    infinite: false
+    custom_model_data: 0
+    launch_power: 3.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  bombarda_maxina:
+    vanilla_cooldown: true
+    material: FIRE_CHARGE
+    texture-value: ""
+    name: "&5&lBombarda maxima"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty z'
+      - '&8» &fkarnetu wakacyjnego 2024&7!'
+      - ''
+      - '&8» &7Po wystrzeleniu wybucha w okolicy'
+      - '&8» &7i niszczy każdy możliwy blok oprócz'
+      - '&8» &fskały macierzystej&7!'
+      - ''
+    cooldown: 30
+    infinite: false
+    custom_model_data: 1
+    explosion_power: 5.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "eventtrudny"
+      - "eventtrudnypvp"
+      - "nether-spawn"
+      - "spawnp"
+      - "endp"
+      - "piwajpi"
+      - "eventpvp"
+
+  sniezka:
+    vanilla_cooldown: true
+    material: SNOWBALL
+    texture-value: ""
+    name: "&fŚnieżka"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu świątecznego (2023)'
+      - ''
+      - '&8» &7Po trafieniu &ezamieniasz się'
+      - '&8» &7z przeciwnikiem miejscem!'
+      - ''
+    cooldown: 15
+    infinite: false
+    custom_model_data: 1
+    distance_limit_enabled: true
+    distance_limit: 20
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  lopata_grincha:
+    vanilla_cooldown: true
+    material: DIAMOND_SHOVEL
+    texture-value: ""
+    name: "&a&lŁopata grincha"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu świątecznego (2024)'
+      - ''
+      - '&8» &7Po &auderzeniu &7przeciwnika'
+      - '&8» &7zostaje on &cogłuszony &7przez co'
+      - '&8» &7rotacja zostaje wylosowana!'
+      - ' '
+    cooldown: 15
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  kosa:
+    vanilla_cooldown: true
+    material: NETHERITE_HOE
+    texture-value: ""
+    name: "&8&lKosa"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu halloween (2023)'
+      - ''
+      - '&8» &7Twoje uderzenie może &fco minute'
+      - '&8» &7przestraszyć przeciwnika nadając'
+      - '&8» &7mu efekty utrudniające widoczność'
+      - ''
+    cooldown: 60
+    infinite: true
+    custom_model_data: 1
+    effects_duration: 10
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  marchewkowy_miecz:
+    vanilla_cooldown: true
+    material: GOLDEN_SWORD
+    texture-value: ""
+    name: "&6Marchewkowy miecz"
+    lore:
+      - ''
+      - '&8» &7Dzięki niemu możesz &bzamrozić &7przeciwnika'
+      - '&8» &7po &cuderzeniu &7na &asekundę!'
+      - ''
+    cooldown: 15
+    infinite: true
+    custom_model_data: 3
+    freeze_seconds: 3
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  marchewkowa_kusza:
+    vanilla_cooldown: true
+    material: CROSSBOW
+    texture-value: ""
+    name: "&6&lMarchewkowa kusza"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z &fwielkanocnego'
+      - '&8» &fwydarzenia &7z &e2024 roku&7!'
+      - ''
+      - '&8» &7Ta &aniezwykła &7kusza zapewnia ci'
+      - '&8» &7zdumiewającą zdolność przyciągania'
+      - '&8» &7do siebie &egraczy&7, tworząc zupełnie'
+      - '&8» &7nowe możliwości eksploracji i walki!'
+      - ''
+    cooldown: 15
+    infinite: true
+    custom_model_data: 1
+    pull_power: 5.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  wedka_surferka:
+    vanilla_cooldown: false
+    material: FISHING_ROD
+    texture-value: ""
+    name: "&b&lWędka surferka"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu wakacyjnego (2023)'
+      - ''
+      - '&8» &7Ta &aniezwykła &7wędkazapewnia ci'
+      - '&8» &7zdumiewającą zdolność przyciągania się'
+      - '&8» &7do &bbloków &7i &dgraczy&7, tworząc zupełnie'
+      - '&8» &7nowe możliwości eksploracji i walki!'
+      - ''
+    cooldown: 10
+    infinite: true
+    custom_model_data: 1
+    pull_velocity: 2.3
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  piernik:
+    vanilla_cooldown: true
+    material: COOKIE
+    texture-value: ""
+    name: "&6&lPiernik"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu świątecznego (2024)'
+      - ''
+      - '&8» &7Po zjedzeniu &epiernika &7otrzymujesz'
+      - '&8» &7efekt &aszybkości kopania 10&7!'
+      - ' '
+    cooldown: 15
+    infinite: false
+    custom_model_data: 1
+    haste_level: 10
+    haste_duration: 30
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  piekielna_tarcza:
+    material: SHIELD
+    texture-value: ""
+    name: "&6Piekielna tarcza"
+    lore:
+      - '&8» &7Posiada &f25% szansy &7na odbicie'
+      - '&8» &cataku &7wroga!'
+      - ''
+    custom_model_data: 1
+    reflect_chance: 25
+    reflect_multiplier: 1.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  dynamit:
+    vanilla_cooldown: true
+    material: RED_CANDLE
+    texture-value: ""
+    name: "&4&lDynamit"
+    lore:
+      - '&8» &7Ten przedmiot umożliwi tobie zniszczenie'
+      - '&8» &7skały macierzystej! Wystarczy kliknąć'
+      - '&8» &7tylko &cprawy &7przycisk!'
+      - ' '
+    cooldown: 15
+    infinite: false
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+      -
+
+  zatruty_olowek:
+    vanilla_cooldown: true
+    material: LIME_CANDLE
+    texture-value: ""
+    name: "&a&lZatruty ołówek"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty z'
+      - '&8» &fwydarzenia szkolnego 2024&7!'
+      - ''
+      - '&8» &7Po uderzeniu przeciwnika'
+      - '&8» &7otrzymuje on &ctrujący efekt&7!'
+      - ''
+    cooldown: 15
+    infinite: true
+    custom_model_data: 1
+    poison_level: 2
+    poison_duration: 10
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  roza_kupidyna:
+    vanilla_cooldown: false
+    material: POPPY
+    texture-value: ""
+    name: "&c&lRóża kupidyna"
+    lore:
+      - '&8» &7Przedmiot zdobyty w &fwalentynki w 2024 roku!'
+      - '&8» &7Trzymaj go w ręce aby otrzymywać:'
+      - ' &8- &fEfekt odporności 1'
+      - ' &8- &fEfekt regeneracji 1'
+      - ''
+    cooldown: 0
+    custom_model_data: 1
+    regen_level: 1
+    resistance_level: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: []
+
+  roza_kupidyna_2026:
+    vanilla_cooldown: false
+    material: POPPY
+    texture-value: ""
+    name: "&c&lRóża kupidyna"
+    lore:
+      - '&8» &7Przedmiot zdobyty w &fwalentynki w 2024 roku!'
+      - '&8» &7Trzymaj go w ręce aby otrzymywać:'
+      - ' &8- &fEfekt odporności 1'
+      - ' &8- &fEfekt regeneracji 1'
+      - ' &8- &f+5 dodatkowych serc'
+      - ''
+    cooldown: 0
+    custom_model_data: 1
+    resistance_level: 1
+    regen_level: 2
+    extra_health: 10.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: []
+
+  krew_wampira:
+    material: BEETROOT_SOUP
+    texture-value: ""
+    name: "&c&lKrew wampira"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu halloween (2023)'
+      - ''
+      - '&8» &7Po kliknięciu uleczy Cię'
+      - '&8» &7do &cpełnego HP&7!'
+      - ''
+    cooldown: 0
+    infinite: false
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  splesniala_kanapka:
+    vanilla_cooldown: true
+    material: POISONOUS_POTATO
+    texture-value: ""
+    name: "&2&lSpleśniała kanapka"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty z'
+      - '&8» &fwydarzenia szkolnego 2024&7!'
+      - ''
+      - '&8» &7Po uderzeniu przeciwnika'
+      - '&8» &7zarazisz go &achorobą&7!'
+      - ''
+    cooldown: 15
+    infinite: false
+    custom_model_data: 1
+    disease_level: 2
+    disease_duration: 10
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  parawan:
+    vanilla_cooldown: true
+    material: FEATHER
+    texture-value: ""
+    name: "&e&lParawan"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty z'
+      - '&8» &fwydarzenia wakacyjnego 2024&7!'
+      - ''
+      - '&8» &7Po użyciu tego przedmiotu odrzuca'
+      - '&8» &7wszystkich przeciwników w okolicy!'
+      - ''
+    cooldown: 30
+    infinite: false
+    custom_model_data: 1
+    knockback_radius: 5.0
+    knockback_power: 1.5
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  turbo_trap:
+    vanilla_cooldown: false
+    material: EGG
+    texture-value: ""
+    name: "&a&lTurbo-Trap"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas:'
+      - '&8» &fWielkanocnego Wydarzenia 2025&7!'
+      - ''
+      - '&8» &7Podczas wystrzelenia Turbotrapu'
+      - '&8» &fbudujesz prostą pułapkę &7w miejscu eksplozji!'
+    cooldown: 15
+    infinite: false
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "eventtrudny"
+      - "eventtrudnypvp"
+      - "nether-spawn"
+      - "spawnp"
+      - "endp"
+      - "piwajpi"
+      - "eventpvp"
+    blocks:
+      - "OAK_TRAPDOOR:0:0:0:90"
+      - "OBSIDIAN:1:0:0"
+      - "OBSIDIAN:-1:0:0"
+      - "OBSIDIAN:0:0:-1"
+      - "OBSIDIAN:1:1:0"
+      - "OBSIDIAN:-1:1:0"
+      - "OBSIDIAN:0:1:-1"
+      - "OBSIDIAN:1:2:0"
+      - "OBSIDIAN:-1:2:0"
+      - "OBSIDIAN:0:2:0"
+      - "OBSIDIAN:1:-1:0"
+      - "OBSIDIAN:-1:-1:0"
+      - "OBSIDIAN:0:-1:-1"
+      - "OBSIDIAN:1:-2:0"
+      - "OBSIDIAN:-1:-2:0"
+      - "OBSIDIAN:0:-2:1"
+      - "OBSIDIAN:0:-2:-1"
+      - "OBSIDIAN:1:-3:0"
+      - "OBSIDIAN:-1:-3:0"
+      - "OBSIDIAN:0:-3:1"
+      - "OBSIDIAN:0:-3:-1"
+      - "OBSIDIAN:1:-4:0"
+      - "OBSIDIAN:-1:-4:0"
+      - "OBSIDIAN:0:-4:1"
+      - "OBSIDIAN:0:-4:-1"
+      - "OBSIDIAN:1:-5:0"
+      - "OBSIDIAN:-1:-5:0"
+      - "OBSIDIAN:0:-5:1"
+      - "OBSIDIAN:0:-5:-1"
+      - "OBSIDIAN:1:-6:0"
+      - "OBSIDIAN:-1:-6:0"
+      - "OBSIDIAN:0:-6:1"
+      - "OBSIDIAN:0:-6:-1"
+      - "OBSIDIAN:2:-7:0"
+      - "OBSIDIAN:-2:-7:0"
+      - "OBSIDIAN:0:-7:1"
+      - "OBSIDIAN:0:-7:-1"
+      - "OBSIDIAN:1:-7:1"
+      - "OBSIDIAN:-1:-7:-1"
+      - "OBSIDIAN:-1:-7:1"
+      - "OBSIDIAN:1:-7:-1"
+      - "OBSIDIAN:2:-8:0"
+      - "OBSIDIAN:-2:-8:0"
+      - "OBSIDIAN:0:-8:1"
+      - "OBSIDIAN:0:-8:-1"
+      - "OBSIDIAN:1:-8:1"
+      - "OBSIDIAN:-1:-8:-1"
+      - "OBSIDIAN:-1:-8:1"
+      - "OBSIDIAN:1:-8:-1"
+      - "OBSIDIAN:2:-9:0"
+      - "OBSIDIAN:-2:-9:0"
+      - "OBSIDIAN:0:-9:1"
+      - "OBSIDIAN:0:-9:-1"
+      - "OBSIDIAN:1:-9:1"
+      - "OBSIDIAN:-1:-9:-1"
+      - "OBSIDIAN:-1:-9:1"
+      - "OBSIDIAN:1:-9:-1"
+      - "OBSIDIAN:1:-10:0"
+      - "OBSIDIAN:-1:-10:0"
+      - "OBSIDIAN:0:-10:1"
+      - "OBSIDIAN:0:-10:-1"
+      - "OBSIDIAN:0:-10:0"
+      - "WHITE_BANNER:0:-3:0:0"
+      - "WHITE_BANNER:0:-4:0:90"
+      - "WHITE_BANNER:0:-5:0:0"
+      - "WHITE_BANNER:0:-6:0:90"
+      - "WHITE_BANNER:0:-7:0:0"
+      - "WHITE_BANNER:0:-8:0:90"
+      - "WHITE_BANNER:0:-9:0:0"
+      - "WHITE_BANNER:0:1:0:0"
+      - "COBWEB:1:-9:0"
+      - "COBWEB:-1:-9:0"
+      - "OAK_FENCE:1:-8:0"
+      - "OAK_FENCE:-1:-8:0"
+      - "OAK_FENCE:1:-7:0"
+      - "OAK_FENCE:-1:-7:0"
+      - "AIR:0:-1:0"
+      - "AIR:0:-2:0"
+      - "AIR:0:-1:1"
+      - "AIR:0:0:1"
+      - "AIR:0:1:1"
+
+  siekiera_grincha:
+    vanilla_cooldown: true
+    material: GOLDEN_AXE
+    texture-value: ""
+    name: "&2Siekiera Grincha"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu świątecznegi (2023)'
+      - ''
+      - '&8» &7Po &auderzeniu &7strzela &fpiorun'
+      - '&8» &7w przeciwnika zabierając mu &c30%'
+      - '&8» &7jego życia! &fUmiejętność &7działa'
+      - '&8» &7raz na 1 minut.'
+      - ''
+    cooldown: 60
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  boski_topor:
+    vanilla_cooldown: true
+    material: IRON_AXE
+    texture-value: ""
+    name: "&b&lBoski topór"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &fspecjalnego wydarzenia (2025)'
+      - ''
+      - '&8» &7Po &fkliknięciu &7prawym przyciskiem'
+      - '&8» &7aktywujesz &epotężną falę uderzeniową'
+      - '&8» &7która zapewna Tobie &cnieśmiertelność&7!'
+      - ' '
+    cooldown: 120
+    infinite: true
+    immortality_duration: 5
+    shockwave_radius: 8.0
+    shockwave_power: 2.0
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  kostka_rubika:
+    vanilla_cooldown: false
+    material: PLAYER_HEAD
+    texture-value: "ewogICJ0aW1lc3RhbXAiIDogMTczNDY1NjIxNjcwMSwKICAicHJvZmlsZUlkIiA6ICIzN2JhNjRkYzkxOTg0OGI4YjZhNDdiYTg0ZDgwNDM3MCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTb3lLb3NhIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzkyZmE2OTM2OTlhNGI3MDE0YTA0ZWFiNDU4NzY3ZmI0OTE2ZWYwNzZiZmJjZGVkZmQ5YzY4NTdhOTI1ZGNhN2EiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+    name: "&e&lKostka rubika"
+    lore:
+      - '&8» &7Kostka rubika była do zdobycia'
+      - '&8» &7w &f2024 roku &7podczas &adnia dziecka'
+      - ''
+      - '&8» &7Uderz gracza, aby jego ekwipunek'
+      - '&8» &7został &fprzemieszany!'
+      - ''
+    cooldown: 30
+    infinite: false
+    custom_model_data: 0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  balonik_z_helem:
+    vanilla_cooldown: false
+    material: PLAYER_HEAD
+    texture-value: "ewogICJ0aW1lc3RhbXAiIDogMTY2ODY4MzY0MzI5NCwKICAicHJvZmlsZUlkIiA6ICI2NmI0ZDRlMTFlNmE0YjhjYTFkN2Q5YzliZTBhNjQ5OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJBcmFzdG9vWXNmIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ExYmU0NGU4NGYwMTJmNDNmYTgxMTcyN2QyZDc0NmExMGI3NWRkOTI0Mzc2ZGQ4MGZiY2IxNzc2ODNkMzUzY2UiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ=="
+    name: "&3&lBalonik z helem"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas'
+      - '&8» &fDnia Dziecka 2025&7!'
+      - ''
+      - '&8» &7Po aktywacji unisi się, niszcząc'
+      - '&8» &7wszystkie bloki znajdujące się nad nim'
+      - ''
+    cooldown: 30
+    infinite: false
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  lizak:
+    material: ALLIUM
+    texture-value: ""
+    name: "&d&lLizak"
+    lore:
+      - '&8» &7Przedmiot zdobyty w &fdzień dziecka&7!'
+      - '&8» &7Trzymaj go w ręce aby otrzymywać:'
+      - ' &8- &fEfekt SIŁY 1'
+      - ''
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: []
+
+  przeterminowany_trunek:
+    vanilla_cooldown: true
+    material: HONEY_BOTTLE
+    texture-value: ""
+    name: "&2&lPrzeterminowany trunek"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas:'
+      - '&8» &fwydarzenia pirackiego 2025&7!'
+      - ''
+      - '&8» &7Po rzuceniu na ziemię, uwalnia &emgiełkę&7, która'
+      - '&8» &7nakłada &atruciznę &7i &fspowolnienie'
+      - '&8» &7na pobliskich graczy przez &ckilkadziesiąt &7sekund.'
+    cooldown: 30
+    infinite: false
+    cloud_radius: 4.0
+    custom_model_data: 1
+    cloud_duration: 300
+    poison_level: 2
+    slowness_level: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  rog_jednorozca:
+    vanilla_cooldown: true
+    material: GOAT_HORN
+    texture-value: ""
+    name: "&d&lRóg Jednorożca"
+    lore:
+      - "&8» &7Jest to przedmiot z:"
+      - "&8» &feventu walentynkowego (2026)"
+      - ""
+      - "&8» &7Po użyciu przywołujesz &djednorożca&7,"
+      - "&8» &7którym możesz jeździć! Niszczy bloki"
+      - "&8» &7na swojej drodze i &cogłusza graczy&7,"
+      - "&8» &7w których wjedziesz!"
+    cooldown: 60
+    custom_model_data: 1
+    infinite: true
+    ride_duration: 10
+    stun_duration: 5
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "spawnp"
+      - "nether-spawn"
+
+  excalibur:
+    vanilla_cooldown: false
+    material: NETHERITE_SWORD
+    texture-value: ""
+    name: "&e&lExcalibur"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot zdobyty z'
+      - '&8» &fwydarzenia wakacyjnego 2024&7!'
+      - ''
+      - '&8» &7Aktualnie zabójstw: &f%kills%'
+      - '&8» &f%bar% &e%percentage%%'
+      - ''
+      - '&8» &7Zapełnienie paska zapewnia'
+      - '&8» &7Ci &f12 punktów obrażeń, &7co'
+      - '&8» &7jest równoznaczne z &eostrością 7&7!'
+      - ''
+      - '&8» &7Obrażenia od ataku: &f11.5'
+      - ''
+    cooldown: 0
+    infinite: true
+    required_kills: 100
+    custom_model_data: 3
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  piekielny_miecz:
+    vanilla_cooldown: false
+    name: "&c&lPiekielny miecz"
+    lore:
+      - ""
+      - "&8» &7Po uderzeniu przeciwnika podpalasz"
+      - "&8» &7go &cpiekielnym ogniem&7, który"
+      - "&8» &7ignoruje &fodporności na ogień!"
+    cooldown: 0
+    infinite: true
+    custom_model_data: 4
+    fire_duration: 5
+    fire_damage: 1.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  zlamane_serce:
+    vanilla_cooldown: true
+    material: PURPLE_DYE
+    texture-value: ""
+    name: "&5&lZłamane serce"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu walentynkowego (2025)'
+      - ''
+      - '&8» &7Uderz nim w przeciwnika aby'
+      - '&8» &7złamać jego &dserduszko!&7'
+      - ' '
+    cooldown: 60
+    infinite: false
+    slowness_level: 1
+    slow_falling_level: 1
+    duration_seconds: 8
+    custom_model_data: 3
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  korona_anarchii:
+    material: GOLDEN_HELMET
+    texture-value: ""
+    name: "&6Korona ANARCHII"
+    lore:
+      - ''
+      - '&8» &eTen przedmiot jest wyjątkowy!'
+      - '&8» &7Na serwerze zanjduje się tylko jedna'
+      - '&8» &7taka korona! Która nigdy nie zostanie'
+      - '&8» &7zniszczona.'
+      - ' '
+      - '&8» &eZalety przedmiotu:'
+      - ' &fStałe efekty:'
+      - '  &8- &fSzybkość II'
+      - '  &8- &fOdporność na ogień I'
+      - '  &8- &fSiła II'
+      - '  &8- &fOdporność III'
+      - '  &8- &fSzczęście I'
+      - ''
+    infinite: true
+    speed_level: 2
+    fire_resistance_level: 1
+    strength_level: 2
+    custom_model_data: 1
+    resistance_level: 3
+    luck_level: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: []
+
+  wzmocniona_elytra:
+    material: ELYTRA
+    texture-value: ""
+    name: "&5&lWzmocniona elytra"
+    lore:
+      - ' &8» &7Jest to przedmiot zdobyty oidczas'
+      - ' &8» &fWielkanocnego Wydarzenia (2025)&7!'
+      - ' '
+      - ' &8» &7Po naładowaniu elytry do &f100%&7, zyskujesz'
+      - ' &8» &cpotężną moc&7, która przy uderzeniu w ziemię'
+      - ' &8» &7uwolni się, oddziałując na pobliskich graczy!'
+      - ' '
+    cooldown: 0
+    infinite: true
+    custom_model_data: 1
+    strike_radius: 5.0
+    strike_damage: 6.0
+    block_damage: false
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  wedka_nielota:
+    vanilla_cooldown: false
+    material: FISHING_ROD
+    texture-value: ""
+    name: "&5&lWędka nielota"
+    lore:
+      - '&8» &7Wędka nielota była do zdobycia'
+      - '&8» &7w &f2024 roku &7podczas &adnia dziecka'
+      - ''
+      - '&8» &7Po złapaniu gracza na haczyk'
+      - '&8» &7nie może on odlecieć &delytrą!'
+      - ''
+    cooldown: 40
+    infinite: true
+    custom_model_data: 2
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  kupa_anarchii:
+    material: GRAY_DYE
+    texture-value: ""
+    name: "&8&lKupa ANARCHII"
+    lore:
+      - ''
+      - '&7Nic nie daje ale stworzył ją'
+      - '&7pan &fdexsi66'
+      - ' '
+      - '&cTen przedmiot nie nadaje &4SIŁKI II'
+      - '&6Ostateczna &6&l&nOFERTA&6!!!'
+      - ''
+    cooldown: 0
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: []
+
+  zajeczy_miecz:
+    vanilla_cooldown: false
+    material: NETHERITE_SWORD
+    texture-value: ""
+    name: "&3&lZajęczy miecz"
+    lore:
+      - ''
+      - '&8» &7Jest to przedmiot z &fwydarzenia'
+      - '&8» &fwielkanocnego &7z &f2024 roku'
+      - ''
+      - '&8» &7Po uderzeniu przeciwnika blokuje'
+      - '&8» &7możliwość skakania na &f4 sekundy&7!'
+      - ''
+    cooldown: 15
+    infinite: true
+    custom_model_data: 2
+    ability_cooldown: 10
+    jump_block_duration: 4
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  zajeczy_miecz_blocked:
+    name: "&b&lZajęczy miecz"
+
+  jajko_creepera:
+    vanilla_cooldown: true
+    material: CREEPER_SPAWN_EGG
+    texture-value: ""
+    name: "&a&lJajko zmutowanego creepera"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas:'
+      - '&8» &fspecjalnego wydarzenia marcowego 2025&7!'
+      - ''
+      - '&8» &7Prawym kliknięciem w jajko przywołujesz'
+      - '&8» &fpotężnego &7creepera, który po &cwybuchu'
+      - '&8» &7zadaje &eogromne &7obrażenia.'
+    cooldown: 30
+    infinite: false
+    custom_model_data: 1
+    damage: 4.0
+    radius: 5.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "eventtrudny"
+      - "eventtrudnypvp"
+      - "nether-spawn"
+      - "spawnp"
+      - "endp"
+      - "piwajpi"
+      - "eventpvp"
+
+  wata_cukrowa:
+    vanilla_cooldown: true
+    material: PINK_DYE
+    texture-value: ""
+    name: "&b&lWata Cukrowa"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas'
+      - '&8» &fwydarzenia cyrkowego 2025&7!'
+      - ''
+      - '&8» &7Po użyciu rozpoczyna &bnaprawę &7jednego'
+      - '&8» &7z elementów twojej zbroi do &apełnej trwałości&7.'
+    cooldown: 60
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  totem_ulaskawienia:
+    material: TOTEM_OF_UNDYING
+    texture-value: ""
+    name: "&5&lTotem ułaskawienia"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu halloween (2023)'
+      - ''
+      - '&8» &7Trzymając go po śmierci &dnie'
+      - '&8» &dstracisz &7swoich przedmiotów'
+      - ''
+    cooldown: 0
+    infinite: false
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: []
+
+  cudowna_latarnia:
+    vanilla_cooldown: true
+    material: BEACON
+    texture-value: ""
+    name: "&d&lCudowna Latarnia"
+    lore:
+      - '&8» &7Przedmiot z &fświątecznego wydarzenia 2025&7!'
+      - ''
+      - '&8» &7Po postawieniu otrzymujesz:'
+      - '&8» &dRegenerację V &8(20s)'
+      - '&8» &eAbsorpcję VI &8(10s)'
+      - '&8» &cSiłę II &8(10s)'
+      - ''
+      - '&8» &7Fontanna pozostanie aktywna przez &f30 sekund&7.'
+      - '&8» &7Efekty działają w zasięgu &f30 kratek&7.'
+      - '&8» &7Zniszczenie fontanny usuwa efekty.'
+      - ''
+    cooldown: 60
+    infinite: true
+    custom_model_data: 1
+    active_duration: 30
+    effect_radius: 30
+    regen_level: 5
+    absorption_level: 6
+    strength_level: 2
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  rozdzka_iluzjonisty:
+    vanilla_cooldown: true
+    material: GOLDEN_HOE
+    texture-value: ""
+    name: "&5&lRóżdżka Iluzjonisty"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas'
+      - '&8» &fwydarzenia cyrkowego 2025&7!'
+      - ''
+      - '&8» &7LPM: przywołuje &dSzczęki Evokera'
+      - '&8» &7atakujące przeciwników na wprost.'
+      - ''
+      - '&8» &7PPM &dznikasz &7na &e4s &7i tworzysz'
+      - '&8» &dklona &7biegnącego do przodu.'
+    cooldown: 10
+    infinite: true
+    custom_model_data: 1
+    invis_duration: 4
+    lpm_cooldown: 60
+    ppm_cooldown: 120
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  trojzab_posejdona:
+    vanilla_cooldown: false
+    material: BOW
+    texture-value: ""
+    name: "&3&lTrójząb Posejdona"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas'
+      - '&8» &fwydarzenia wakacyjnego 2025&7!'
+      - ''
+      - '&8» &7Po rzuceniu trójzebem w miejsce'
+      - '&8» &7uderzenia &buderza piorun&7, który'
+      - '&8» &7zadaje obrażenia i odpycha'
+      - '&8» &7pobliskich przeciwników!'
+      - ''
+      - '&8» &7Klikając &fSHIFT &7możesz się'
+      - '&8» &7wystrzelić w dowolnym miejscu!'
+    shot_cooldown: 5
+    launch_cooldown: 5
+    infinite: true
+    custom_model_data: 1 
+    launch_power: 10.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  sakiewka_dropu:
+    material: RABBIT_FOOT
+    texture-value: ""
+    name: "&a&lSakiewka dropu"
+    lore:
+      - '&8» &7Posiadając ten przedmiot w'
+      - '&8» &7ekwipunku po &czabiciu &7dowolnego'
+      - '&8» &fgracza &7jego przedmioty trafiają'
+      - '&8» &7do twojej &asakiewki&a!'
+      - ''
+      - '&8» &eKliknij PRAWYM, aby otworzyć sakiewkę!'
+      - ''
+    cooldown: 0
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  arcus_magnus:
+    vanilla_cooldown: true
+    material: BOW
+    texture-value: ""
+    name: "&a&lArcus Magnus"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu halloween (2024)'
+      - ''
+      - '&8» &7Łuk, który pozwala na'
+      - '&8» &eniszczycielskie &7combo!'
+      - '&8» &7Po trafieniu przeciwnika'
+      - '&8» &7zadajesz mu &cogromne obrażenia&7, które'
+      - '&8» &7zwiększają się z każdym trafieniem!'
+      - ' '
+    cooldown: 0
+    infinite: true
+    combo_bonus_damage: 2.0
+    custom_model_data: 1
+    max_combo: 5
+    combo_reset_seconds: 5
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  wampirze_jablko:
+    vanilla_cooldown: false
+    material: ENCHANTED_GOLDEN_APPLE
+    texture-value: ""
+    name: "&c&lWampirze jabłko"
+    lore:
+      - '&8» &7Jest to przedmiot z:'
+      - '&8» &feventu halloween (2024)'
+      - ''
+      - '&8» &7Po zjedzeniu otrzymujesz na'
+      - '&8» &7krótki czas efekt &csiły II&7!'
+      - ''
+    cooldown: 60
+    custom_model_data: 1
+    infinite: false
+    strength_duration: 15
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  rozgotowana_kukurydza:
+    vanilla_cooldown: false
+    material: BLAZE_ROD
+    texture-value: ""
+    name: "&a&lRozgotowana kukurydza"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty z'
+      - '&8» &fwydarzenia wakacyjnego 2024&7!'
+      - ''
+      - '&8» &7Wystrzeliwuje magiczny pocisk,'
+      - '&8» &7który niszczy zbroję oraz zadaje'
+      - '&8» &7obrażenia w miejscu wybuchu.'
+      - ''
+    cooldown: 60
+    infinite: true
+    custom_model_data: 1
+    explosion_radius: 6.0
+    armor_damage: 50
+    health_damage: 6.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "eventtrudny"
+      - "eventtrudnypvp"
+      - "nether-spawn"
+      - "spawnp"
+      - "endp"
+      - "piwajpi"
+      - "eventpvp"
+
+  hydro_klatka:
+    vanilla_cooldown: false
+    material: BLAZE_ROD
+    texture-value: ""
+    name: "&3&lWyrzutnia Hydro Klatki"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas'
+      - '&8» &fwydarzenia wakacyjnego 2025&7!'
+      - ''
+      - '&8» &7Po użyciu wystrzeliwuje pocisk, który'
+      - '&8» &7tworzy &3wodną klatkę &7uwięziającą'
+      - '&8» &7przeciwników w miejscu!'
+    cooldown: 180
+    infinite: true
+    custom_model_data: 2
+    radius: 10
+    duration: 15
+    shell_material: BLUE_GLAZED_TERRACOTTA
+    fill_material: LIGHT_BLUE_CONCRETE
+    cut_at_all_regions: true
+    blocked_worlds:
+      - "worlds"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  blok_widmo:
+    vanilla_cooldown: true
+    material: STRUCTURE_BLOCK
+    texture-value: ""
+    name: "&c&lBlok widmo"
+    lore:
+      - '&8» &7Jest to przedmiot zdobyty podczas:'
+      - '&8» &fDnia Dziecka 2025&7!'
+      - ''
+      - '&8» &7Po postawieniu na ziemi,'
+      - '&8» &7uwalnia &eenergię&7, która obniża'
+      - '&8» &fmaksymalny limit &7serc pobliskim'
+      - '&8» &7graczom na określony czas..'
+    cooldown: 60
+    infinite: true
+    custom_model_data: 1
+    duration: 90
+    radius: 5.0
+    health_limit: 10.0
+    proximity_radius: 5.0
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+
+  smoczy_miecz:
+    vanilla_cooldown: false
+    material: NETHERITE_SWORD
+    texture-value: ""
+    name: "&d&lSmoczy miecz"
+    lore:
+      - ''
+      - '&8» &7Posiada on możliwość strzelania'
+      - '&8» &dperłami kresu'
+      - ''
+    cooldown: 15
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  luk_kupidyna:
+    vanilla_cooldown: true
+    material: BOW
+    texture-value: ""
+    name: "&4Łuk kupidyna"
+    lore:
+      - ''
+      - '&5&lSpecjalny przedmiot!'
+      - '&7Masz szanse, że trafiony przez'
+      - '&7Ciebie gracz zostaje &doślepiony!'
+      - ' '
+    cooldown: 15
+    duration: 5
+    infinite: true
+    custom_model_data: 1
+    blocked_worlds:
+      - "spawn"
+    blocked_regions: 
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"
+
+  supernieskonczonamarchewka:
+    vanilla_cooldown: true
+    material: GOLDEN_CARROT
+    texture-value: ""
+    name: "&6&lSuper Nieskończona Marchewka"
+    lore:
+      - '&8» &7Pochodzenie: &cMagiczna Skrzynia'
+      - ''
+      - '&8» &7Zwieksza twoja skale do: &62.5'
+      - '&8» &7Czas trwania: &630 sekund'
+      - '&8» &7Dodatkowe efekty:'
+      - '&8- &7Spowolnienie II'
+      - '&8- &7Odpornosc II'
+      - '&8- &7Zwiekszone obrazenia z kryta'
+      - ''
+      - '&8» &7Cooldown: &660 sekund'
+    cooldown: 60
+    infinite: true
+    custom_model_data: 1
+    duration_seconds: 30
+    scale_multiplier: 2.5
+    crit_damage_multiplier: 1.5
+    blocked_worlds:
+      - "spawn"
+    blocked_regions:
+      - "spawn"
+      - "end"
+      - "event2"
+      - "event"
+      - "nether-spawn"

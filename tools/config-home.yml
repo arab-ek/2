@@ -1,0 +1,26 @@
+# ========================================== #
+#      KONFIGURACJA SYSTEMU DOMÓW (HOME)     #
+# ========================================== #
+
+# Uprawnienia dotyczące limitów:
+# Nadaj graczowi permisję "core.home.limit.X" (np. "core.home.limit.5", "core.home.limit.10").
+# Domyślnie gracz bez permisji może mieć max. 3 domy.
+
+gui:
+  title: "&8Twoje domy"
+  size: 27
+  item_material: "WHITE_BED"
+  item_name: "&#9AFF9A&lDom: &f{NAME}"
+  item_lore:
+    - "&8▶ &7Świat: &f{WORLD}"
+    - "&8▶ &7Kordy: &f{X}, {Y}, {Z}"
+    - ""
+    - "&#97CFF5Kliknij, aby się przeteleportować!"
+
+messages:
+  home_set: "&#9AFF9APomyślnie ustawiono dom o nazwie &f{NAME}&#9AFF9A!"
+  home_deleted: "&#EC8C8CUsunięto dom o nazwie &f{NAME}&#EC8C8C!"
+  home_not_exists: "&#EC8C8CDom o takiej nazwie nie istnieje!"
+  correct_usage_delhome: "&8» &fPoprawne użycie: &#97CFF5/delhome <nazwa>"
+  limit_reached: "&#EC8C8COsiągnąłeś maksymalny limit domów (&f{LIMIT}&#EC8C8C)!"
+  teleported: "&#9AFF9APrzeteleportowano do domu: &f{NAME}"

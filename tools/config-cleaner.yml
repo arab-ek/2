@@ -1,0 +1,32 @@
+# ========================================== #
+#      KONFIGURACJA SYSTEMU CLEANER          #
+# ========================================== #
+
+settings:
+  # Czas (w sekundach) po którym tymczasowe bloki zostaną usunięte
+  live_time_seconds: 60
+
+  # Światy, w których działa system czasowego usuwania bloków
+  enabled_worlds:
+    - "world"
+    - "spawn_the_end"
+
+  # Lista bloków, które po postawieniu zostaną usunięte po upływie `live_time_seconds`
+  temporary_blocks:
+    - "COBWEB"
+    - "OBSIDIAN"
+
+  # --- USTAWIENIA ENDU (Restrykcje) ---
+  end_world_name: "spawn_the_end"
+  end_spawn_region: "spawnend"
+
+  # Bloki, które gracze mogą stawiać w endzie (poza regionem spawnend)
+  allowed_end_place_blocks:
+    - "COBWEB"
+    - "OBSIDIAN"
+
+  # Bloki, które gracze mogą niszczyć w endzie (poza regionem spawnend)
+  allowed_end_break_blocks:
+    - "COBWEB"
+    - "FIRE"
+    - "SOUL_FIRE"

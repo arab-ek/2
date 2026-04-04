@@ -1,0 +1,53 @@
+name: bakemc-core
+version: '1.0'
+main: dev.arab.Main
+api-version: '1.18'
+softdepend: [WorldGuard, Vault, PlaceholderAPI, SkinsRestorer]
+author: _arab__
+website: dc.bakemc.pl
+description: W pełni zaanwasowany CORE wykonany przez "_arab__" dla serwera BAKEMC.PL (dc.bakemc.pl)
+commands:
+  anarchiaeventowki:
+    description:
+    permission: bakemc.core.anarchiaeventowki.use
+  excalibur:
+    description:
+    permission: bakemc.core.excalibur.admin
+  incognito:
+    description: Tryb incognito
+    permission: bakemc.core.incognito
+  trybtworcy:
+    description: Tryb tworcy
+    permission: bakemc.core.trybtworcy.use
+  szafa:
+    description: Otwiera szafę
+  aszafa:
+    description: Zarządzanie szafą (admin)
+    permission: bakemc.core.szafa.admin
+  azmianki:
+    description: Zarządzanie zmiankami
+    permission: bakemc.core.zmianki.admin
+  ksiegi:
+    description: System ksiąg
+    permission: bakemc.core.ksiegi.use
+  sprawdz:
+    description: System sprawdzania
+    permission: bakemc.core.sprawdz.use
+  przyznajsie:
+    description: Przyznanie się
+  rtp:
+    description: Random Teleport
+    permission: bakemc.core.rtpuse
+  home:
+    description: Otwiera GUI home
+  sethome:
+    description: Ustawia home
+  delhome:
+    description: Usuwa home
+  boss:
+    description: Komenda bossow
+    permission: bakemc.core.bossuse
+  dropsmok:
+      description: Podglad dropu ze smoka
+  adropsmok:
+      description: Edycja dropu ze smoka dla admina

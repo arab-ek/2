@@ -1,0 +1,33 @@
+# ========================================== #
+#   KONFIGURACJA OCHRONY (Redstone, Border)  #
+# ========================================== #
+
+settings:
+  redstone:
+    enabled: true
+    # Zostaw puste by zablokować wszystko poza guzikami i dzwigniami,
+    # albo dodaj wyjatki np: - "PISTON"
+    allowed_redstone_items: []
+
+  border:
+    enabled: true
+    world: "world"
+    # Dystans w kratkach od fizycznego bordera, przy ktorym gracze nie moga budowac
+    protection_radius: 10.0
+
+  anti_house:
+    enabled: true
+    # Jeśli postawi 'block_threshold' blokow w ciagu 'time_window_ms' - wyrzuci powiadomienie do admina
+    time_window_ms: 1250
+    block_threshold: 10
+    monitored_blocks:
+      - "OAK_PLANKS"
+      - "SPRUCE_PLANKS"
+      - "BIRCH_PLANKS"
+      - "COBBLESTONE"
+      - "DIRT"
+
+messages:
+  redstone_blocked: "&#EC8C8CStawianie mechanizmów Redstone jest zablokowane na tym serwerze!"
+  minecart_blocked: "&#EC8C8CStawianie wagoników z zawartością jest zabronione!"
+  anti_house_alert: "&8[&d⚠&8] &fGracz &d{PLAYER} &fjest podejrzewany o cheaty &d(Auto Domki/Scaffold)&f!"

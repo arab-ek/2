@@ -1,0 +1,11 @@
+settings:
+  enabled: true
+  enabled_worlds:
+    - "world"
+    - "spawn_the_end"
+  void_damage: 4.0
+  dripstone_multiplier: 2.0
+
+messages:
+  drop_blocked: "&cNie mozesz wyrzucac przedmiotow wpadajac do Voidu!"
+  command_blocked: "&cNie mozesz otwierac tego w Voidzie!"

@@ -1,0 +1,55 @@
+gui:
+  title: "   &8ᴢᴀᴄᴢᴀʀᴏᴡᴀɴɪᴇ ᴘʀᴢᴇᴅᴍɪᴏᴛᴜ"
+  item_action:
+    material: BLUE_DYE
+    name: "&3Zaczaruj przedmiot"
+    lore:
+      - ""
+      - " &4UWAGA! &cKlikając ten przedmiot"
+      - " &cprzemieniasz bonus 'DODATKOWE OBRAŻENIA'"
+      - " &cbezpowrotnie!"
+      - ""
+      - " &8» &7Koszt: &3&LZaczarowanie przedmiotu x1"
+      - " &8» &7Kliknij, aby przelosować!"
+    custom_model_data: 1
+  item_slot:
+    material: PAPER
+    name: "&6Miejsce na przedmiot"
+    lore:
+      - " &8» &7Umieść tutaj swój przedmiot"
+      - " &8» &7Który chcesz &fzaczarować!"
+  item_close:
+    material: BARRIER
+    name: "&cZamknij!"
+    lore:
+      - " &8» &7Kliknij, aby &fzamknąć!"
+
+enchant_item:
+  material: BLUE_DYE
+  name: "&3&lZaczarowanie przedmiotu"
+  lore:
+    - " &8» &7Kliknij &bprawym, &7aby &bzmienić"
+    - " &8» &7bonusowe &cobrażenia"
+  custom_model_data: 1
+
+settings:
+  chance_ranges:
+    - min: -15
+      max: 0
+      chance: 20
+    - min: 1
+      max: 39
+      chance: 45
+    - min: 40
+      max: 45
+      chance: 6
+    - min: 46
+      max: 51
+      chance: 3
+  lore_templates:
+    low: "&cDodatkowe obrażenia -{procent}%" # < 0
+    normal: "&fDodatkowe obrażenia {procent}%" # 0-30
+    high: "&eDodatkowe obrażenia {procent}%" # 30-45
+    very_high: "&6Dodatkowe obrażenia {procent}%" # > 45
+  messages:
+    no_sword: "&cMusisz włożyć &4miecz&c do środka!" 

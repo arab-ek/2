@@ -1,0 +1,9 @@
+actionbar:
+  text: "&8※ &f&lᴛʀʏʙ &c&lᴛᴡᴏʀᴄʏ: &a&l✔ &8※"
+
+messages:
+  enabled: "&a&l✔ &fTryb twórcy został &awłączony&f!"
+  disabled: "&4&l✖ &7Tryb twórcy został &cwyłączony&7!"
+  reloaded: "&aKonfiguracja pluginu została przeładowana!"
+  no_permission: "&cNie do tego permisji!"
+  only_player: "Tylko gracz może użyć tej komendy."

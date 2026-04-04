@@ -1,0 +1,71 @@
+# ========================================== #
+#     KONFIGURACJA SYSTEMU SPRAWDZANIA       #
+# ========================================== #
+
+locations:
+  # Lokalizacja klatki, do której teleportowani są gracze podczas sprawdzania
+  cage:
+    world: "world"
+    x: 0.0
+    y: 100.0
+    z: 0.0
+  # Lokalizacja powrotu (spawn), gdzie gracze wracają po byciu uznanym za czystych
+  spawn:
+    world: "world"
+    x: 0.0
+    y: 70.0
+    z: 0.0
+
+commands:
+  # Komendy wykonywane przez konsole po zakończeniu sprawdzania (zbanowanie)
+  ban_cheaty: "tempban {player} 7d &cCheaty/Brak wspolpracy"
+  ban_brak_wspolpracy: "tempban {player} 7d &cBrak wspolpracy"
+  ban_przyznanie: "tempban {player} 3d &cPrzyznanie sie do cheatow"
+  ban_wylogowanie: "tempban {player} 7d &cWylogowanie sie podczas sprawdzania"
+
+messages:
+  # Wiadomości systemowe (używaj & lub HEX kodów, np. &#EC8C8C)
+  no_permission: "&#EC8C8CNie posiadasz permisji &f{PERMISSION}"
+  correct_usage: "&8» &fPoprawne użycie: &#97CFF5{USAGE}"
+  null_player: "&#EC8C8CPodany gracz jest &foffline/nie istnieje"
+  admit_error: "&#EC8C8CNie jesteś aktualnie &fsprawdzany!"
+
+  is_checking_target: "&#EC8C8CPodany gracz jest &fjuż sprawdzany!"
+  is_not_checking_target: "&#EC8C8CPodany gracz nie jest &fsprawdzany!"
+  is_checking_admin: "&#EC8C8CSprawdzasz już inną &fosobę!"
+  is_not_checking_admin: "&#EC8C8CNie sprawdzasz &fnikogo!"
+
+  started_checking_admin: "&#9AFF9ARozpoczęto sprawdzanie gracza &f{PLAYER}"
+  logout_checking_admin: "&#9AFF9AUmożliwiono wylogowanie się dla &f{PLAYER} &#9AFF9Abez bana."
+  blocked_command: "&#EC8C8CNie możesz używać tej komendy podczas sprawdzania!"
+
+  # Tytuły wyświetlane graczowi po wezwaniu
+  checking_target_title: "&#97CFF5&lᴊᴇꜱᴛᴇꜱ ꜱᴘʀᴀᴡᴅᴢᴀɴʏ"
+  checking_target_subtitle: "&fWykonuj polecenia &#EC8C8Cadministratora {ADMIN}"
+
+  # Globalne ogłoszenia (możesz używać wielu linijek)
+  broadcasts:
+    start_checking:
+      - " "
+      - "&8▶ &fAdministrator &#EC8C8C{ADMIN} &frozpoczął sprawdzanie &#EC8C8C{TARGET}"
+      - " "
+    clear:
+      - " "
+      - "&8▶ &fAdministrator &#9AFF9A{ADMIN} &fuznał że &#9AFF9A{TARGET} &fjest niewinny!"
+      - " "
+    cheater:
+      - " "
+      - "&8▶ &fAdministrator &#EC8C8C{ADMIN} &fwykrył posiadanie cheatów u &#EC8C8C{TARGET}!"
+      - " "
+    not_cooperated:
+      - " "
+      - "&8▶ &fGracz &#EC8C8C{TARGET} &fnie współpracował podczas sprawdzania z &#EC8C8C{ADMIN}!"
+      - " "
+    admit:
+      - " "
+      - "&8▶ &fGracz &#EC8C8C{TARGET} &fprzyznał się do używania &#EC8C8Ccheatów!"
+      - " "
+    logout:
+      - " "
+      - "&8▶ &fGracz &#EC8C8C{TARGET} &fwylogował się podczas &#EC8C8Csprawdzania!"
+      - " "

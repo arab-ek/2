@@ -1,0 +1,18 @@
+# ========================================== #
+#      KONFIGURACJA RANDOM TELEPORT (RTP)    #
+# ========================================== #
+
+settings:
+  require_permission: false
+  cooldown_seconds: 5
+  teleport_world: "world"     # <--- Na ten świat plugin wrzuci gracza
+  min_radius: 500
+  max_radius: 5000
+  max_attempts: 15
+
+messages:
+  no_permission: "&#EC8C8CNie posiadasz permisji &fcore.rtp"
+  cooldown: "&#EC8C8CMusisz poczekać jeszcze &f{TIME}s &#EC8C8Caby ponownie użyć tej komendy!"
+  teleporting: "&#97CFF5Szukam bezpiecznej lokalizacji... Trzymaj się!"
+  success: "&#9AFF9APrzeteleportowano w losowe miejsce! &8(&fX: {X}, Y: {Y}, Z: {Z}&8)"
+  failed: "&#EC8C8CNie udało się znaleźć bezpiecznego miejsca! Spróbuj ponownie."

@@ -1,0 +1,26 @@
+gui:
+  title: "           &8ᴡʏʙɪᴇʀᴢ ᴛʀʏʙ"
+  size: 27
+  items:
+    incognito:
+      material: PLAYER_HEAD
+      name: "&7Tryb &nIncognito"
+      lore:
+        - ""
+        - "&8» &fStatus: {STATUS}"
+        - ""
+        - "&aKliknij, aby przełączyć!"
+      slot: 12
+      custommodeldata: 0
+      head_value: "ewogICJ0aW1lc3RhbXAiIDogMTYyMDg4NzU2NjU1MiwKICAicHJvZmlsZUlkIiA6ICJiNWRkZTVmODJlYjM0OTkzYmMwN2Q0MGFiNWY2ODYyMyIsCiAgInByb2ZpbGVOYW1lIiA6ICJsdXhlbWFuIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2I0YjU3Y2U5NzU0NTMzYjZjNTIzZDg0YWI1NTY1ZDFiY2NkMDE5MWQ5M2YwYmFkZjk4NGJjMzQ2ZTk1OTA1NzQiCiAgICB9CiAgfQp9"
+    trybtworcy: 
+      material: PLAYER_HEAD 
+      name: "&cTryb &nTwórcy"
+      lore:
+        - ""
+        - "&8» &fStatus: {STATUS}"
+        - ""
+        - "&aKliknij, aby przełączyć!"
+      slot: 14
+      custommodeldata: 0
+      head_value: "ewogICJ0aW1lc3RhbXAiIDogMTc0OTA3Mjc3NTA1MSwKICAicHJvZmlsZUlkIiA6ICI0M2NmNWJkNjUyMDM0YzU5ODVjMDIwYWI3NDE0OGQxYiIsCiAgInByb2ZpbGVOYW1lIiA6ICJrYW1pbDQ0NSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yYTFjNDhiZjBhMjIzMGE0NjEwMzAwNjVlYjk0MWFkNTYwZDA4ZmFkNTBhZTU2MzQ5NzNlNWFhZWM0NzBlNmJiIgogICAgfQogIH0KfQ=="

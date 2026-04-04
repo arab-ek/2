@@ -1,0 +1,87 @@
+# ========================================== #
+#      KONFIGURACJA BOSSA (SMOK W ENDZIE)    #
+# ========================================== #
+
+gui_layout:
+  GLASS1:
+    material: BLACK_STAINED_GLASS_PANE
+    name: "&8*"
+    slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+  GLASS2:
+    material: RED_STAINED_GLASS_PANE
+    name: "&c*"
+    slots:
+      - 9
+      - 18
+      - 27
+      - 17
+      - 26
+      - 35
+
+settings:
+  enabled: true # Zmień na false, by całkowicie wyłączyć bossa
+  # O której godzinie smok ma się respić? (Format HH:mm)
+  # Odliczanie na BossBarze rozpocznie się 1 minutę wcześniej.
+  spawn_times:
+    - "18:00"
+    - "20:00"
+    - "22:00"
+
+  # Ile HP ma mieć smok?
+  dragon_max_health: 500.0
+
+locations:
+  # Gdzie smok ma się pojawić? (Zalecane 0, y, 0 w endzie, bo tam smoki najlepiej latają)
+  spawn:
+    world: "spawn_the_end"
+    x: 0.0
+    y: 90.0
+    z: 0.0
+
+# Kto zada NAJWIECEJ obrazen, losuje jedna z poniższych nagród na podstawie szans (chance)
+# Łączna suma 'chance' nie musi wynosić 100, system losuje wagowo,
+# ale najlepiej gdy daje równe 100%.
+rewards:
+  nagroda_1:
+    chance: 10.0
+    command: "give {PLAYER} diamond_block 64"
+  nagroda_2:
+    chance: 40.0
+    command: "give {PLAYER} emerald_block 64"
+  nagroda_3:
+    chance: 50.0
+    command: "give {PLAYER} iron_block 64"
+
+messages:
+  drop_gui_title: "&8Podglad Dropu"
+  title_spawn_main: "&#B854FF&lSMOK KRESU"
+  title_spawn_sub: "&fPojawił się na świecie &dEnd&f! Idź go pokonać!"
+
+  bossbar_countdown: "&dSmok Kresu &fpojawi się za: &d{TIME}s"
+  bossbar_waiting: "&fOczekiwanie na graczy... Zaatakuj &dSmoka&f!"
+
+  # Zmienne: {POSITION} (1, 2 lub 3), {PLAYER}, {DMG}
+  bossbar_top_format: "&8▶ &dTOP {POSITION}: &f{PLAYER} &8(&d{DMG} HP&8)"
+
+  hologram_format: "&#B854FF&lSMOK &8(&f{HP} ❤&8)"
+
+  dragon_died_no_attackers: "&8▶ &fSmok w Endzie został pokonany, ale nikt nie zadał mu obrażeń!"
+  dragon_died_winner: "&8▶ &fGracz &#B854FF{PLAYER} &fpokonał Smoka zadając &#B854FF{DMG} &fobrażeń i zgarnia nagrodę!"
